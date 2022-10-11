@@ -1,61 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Недвижимость</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="Assets/CSS/style.css"> 
 </head>
+
 <body class="bg-figma-bg">
-    <header class="bg-figma-dgray">        
+    <header class="bg-figma-dgray">
         <nav class="text-white  ">
             <div class="container flex flex-col lg:flex-row justify-between items-center mx-auto p-4">
-             <div class="flex flex-col sm:flex-row items-center">
-                <a href="#" class="m-4"><h3 class="text-3xl">ЛОГО</h3></a>
-                <p class="text-2xl m-4 text-center">Работайте с профессионалами</p>                
-             </div>
-             <div class="flex flex-row text-base">
-                <p class="text-base mx-4 hidden sm:flex sm:flex-col">Email</p>
-                <p class="text-base mx-4 flex flex-col hidden sm:flex sm:flex-col">
-                    <span>+905534562314</span>
-                    <span>+79055327272</span>
-                </p>
-                <button class="text-base mx-4 bg-figma-yellow rounded-3xl px-4"><span class="text-figma-black">Обратный звонок</span></button>
-                <div class="text-base mx-4 flex flex-row items-center">
-                    <img class="w-8 h-8 m-1" src="Assets/img/header/nav.png" alt="">
-                    <img class="w-8 h-8 m-1" src="Assets/img/header/nav.png" alt="">
+                <div class="flex flex-col sm:flex-row items-center">
+                    <a href="#" class="m-4">
+                        <h3 class="text-3xl">ЛОГО</h3>
+                    </a>
+                    <p class="text-2xl m-4 text-center">Работайте с профессионалами</p>
                 </div>
-                <button data-collapse-toggle="navbar-default" aria-controls="navbar-default" aria-expanded="false" type="button" class="lg:hidden">
-                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd">
-                        </path>
-                    </svg>
-                </button>
-             </div>                        
+                <div class="flex flex-row text-base">
+                    <p class="text-base mx-4 hidden sm:flex sm:flex-col">Email</p>
+                    <p class="text-base mx-4 flex flex-col hidden sm:flex sm:flex-col">
+                        <span>+905534562314</span>
+                        <span>+79055327272</span>
+                    </p>
+                    <button
+                        class="text-base mx-4 bg-figma-yellow rounded-3xl px-4 hover:border hover:border-figma-black hover:bg-figma-dyellow"><span
+                            class="text-figma-black">Обратный звонок</span></button>
+                    <div class="text-base mx-4 flex flex-row items-center">
+                        <img class="w-8 h-8 m-1" src="Assets/img/header/nav.png" alt="">
+                        <img class="w-8 h-8 m-1" src="Assets/img/header/nav.png" alt="">
+                    </div>
+                    <button data-collapse-toggle="navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                        type="button" class="lg:hidden">
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div class="border border-white w-full container mx-auto"></div> 
-            <div class="hidden lg:flex flex flex-col lg:flex-row container mx-auto justify-around flex-wrap"  id="navbar-default">
+            <div class="border border-white w-full container mx-auto"></div>
+            <div class="hidden lg:flex flex flex-col lg:flex-row container mx-auto justify-around flex-wrap"
+                id="navbar-default">
                 <a href="#" class="text-base m-2">Компания</a>
                 <a href="#" class="text-base m-2">Объекты/аренда</a>
                 <a href="#" class="text-base m-2">Объекты/продажа</a>
                 <a href="#" class="text-base m-2">Продать/сдать свой объект</a>
                 <a href="#" class="text-base m-2">Полезная информация</a>
-                <a href="#" class="text-base m-2">Контакты</a> 
+                <a href="#" class="text-base m-2">Контакты</a>
                 <p class="text-base m-2 sm:hidden block">Email</p>
                 <p class="text-base m-2 flex flex-col sm:hidden block">
                     <span>+905534562314</span>
                     <span>+79055327272</span>
-                </p>               
+                </p>
             </div>
-          </nav>  
+        </nav>
     </header>
 
     <div class="text-figma-dgray container mx-auto">
         <p class="text-4xl sm:text-5xl mt-32 mb-24">Наши преимущества</p>
         <div class="flex flex-col lg:flex-row justify-around">
-            <div class="mx-4 flex items-center"><img src="Assets/img/adventages/advantages.png" alt="" class="w-full"></div>
+            <div class="mx-4 flex items-center"><img src="Assets/img/adventages/advantages.png" alt="" class="w-full">
+            </div>
             <div class="flex flex-col mx-auto">
                 <div class="flex flex-row items-start my-2 lg:my-3 xl:my-6">
                     <p class="text-5xl text-figma-yellow mr-7">01</p>
@@ -91,44 +107,94 @@
         </div>
     </div>
 
-    <footer class="bg-figma-dgray h-80">        
+    <div class="text-figma-dgray container mx-auto">
+        <p class="text-4xl sm:text-5xl mt-32 mb-24">Наши услуги</p>
+        <div class="flex flex-col lg:flex-row justify-around mb-32">
+            <div class="mx-4 flex items-center"><img src="Assets/img/services/1.png" alt="" class="w-full"></div>
+            <div class="flex flex-col mx-auto w-1/2 ml-12">
+                <p class="text-4xl mb-5">Аренда объектов</p>
+                <p class="text-xl h-40">Здесь можно добавить текст. Описание каждой услуги.Здесь можно добавить текст.
+                    Описание каждой услуги.Здесь можно добавить текст. Описание каждой услуги.Здесь можно добавить
+                    текст.
+                    Описание каждой услуги.
+                </p>
+                <button
+                    class="bg-transparent border-2 border-figma-yellow w-48 rounded-3xl p-1 mt-12 hover:bg-figma-dyellow">Подробнее</button>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-around mb-32">            
+            <div class="flex flex-col mx-auto w-1/2 ml-12">
+                <p class="text-4xl mb-5">Продажа объектов</p>
+                <p class="text-xl h-40">Здесь можно добавить текст. Описание каждой услуги.Здесь можно добавить текст.
+                    Описание каждой услуги.Здесь можно добавить текст. Описание каждой услуги.Здесь можно добавить
+                    текст.
+                    Описание каждой услуги.
+                </p>
+                <button
+                    class="bg-transparent border-2 border-figma-yellow w-48 rounded-3xl p-1 mt-12 hover:bg-figma-dyellow">Подробнее</button>
+            </div>
+            <div class="mx-4 flex items-center"><img src="Assets/img/services/2.png" alt="" class="w-full"></div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-around mb-32">
+            <div class="mx-4 flex items-center"><img src="Assets/img/services/3.png" alt="" class="w-full"></div>
+            <div class="flex flex-col mx-auto w-1/2 ml-12">
+                <p class="text-4xl mb-5">Продать/сдать свой объект</p>
+                <p class="text-xl h-40">Здесь можно добавить текст. Описание каждой услуги.Здесь можно добавить текст.
+                    Описание каждой услуги.Здесь можно добавить текст. Описание каждой услуги.Здесь можно добавить
+                    текст.
+                    Описание каждой услуги.
+                </p>
+                <button
+                    class="bg-transparent border-2 border-figma-yellow w-48 rounded-3xl p-1 mt-12 hover:bg-figma-dyellow">Подробнее</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-figma-dgray h-80">
         <nav class="text-white  ">
             <div class="container flex flex-col lg:flex-row justify-between items-center mx-auto p-4">
-             <div class="flex flex-col sm:flex-row items-center">
-                <a href="#" class="m-4"><h3 class="text-3xl">ЛОГО</h3></a>
-                <p class="text-2xl m-4 text-center">Работайте с профессионалами</p>                
-             </div>
-             <div class="flex flex-row text-base">
-                <p class="text-base mx-4 hidden sm:flex sm:flex-col">Email</p>
-                <p class="text-base mx-4 flex flex-col hidden sm:flex sm:flex-col">
-                    <span>+905534562314</span>
-                    <span>+79055327272</span>
-                </p>
-                <button class="text-base mx-4 bg-figma-yellow rounded-3xl px-4"><span class="text-figma-black">Обратный звонок</span></button>
-                <div class="text-base mx-4 flex flex-row items-center">
-                    <img class="w-8 h-8 m-1" src="Assets/img/header/nav.png" alt="">
-                    <img class="w-8 h-8 m-1" src="Assets/img/header/nav.png" alt="">
+                <div class="flex flex-col sm:flex-row items-center">
+                    <a href="#" class="m-4">
+                        <h3 class="text-3xl">ЛОГО</h3>
+                    </a>
+                    <p class="text-2xl m-4 text-center">Работайте с профессионалами</p>
                 </div>
-             </div>                        
+                <div class="flex flex-row text-base">
+                    <p class="text-base mx-4 hidden sm:flex sm:flex-col">Email</p>
+                    <p class="text-base mx-4 flex flex-col hidden sm:flex sm:flex-col">
+                        <span>+905534562314</span>
+                        <span>+79055327272</span>
+                    </p>
+                    <button
+                        class="text-base mx-4 bg-figma-yellow rounded-3xl px-4 hover:border hover:border-figma-black hover:bg-figma-dyellow"><span
+                            class="text-figma-black">Обратный звонок</span></button>
+                    <div class="text-base mx-4 flex flex-row items-center">
+                        <img class="w-8 h-8 m-1" src="Assets/img/header/nav.png" alt="">
+                        <img class="w-8 h-8 m-1" src="Assets/img/header/nav.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="border border-white w-full container mx-auto hidden lg:block"></div> 
-            <div class="hidden lg:flex flex flex-col lg:flex-row container mx-auto justify-around flex-wrap"  id="navbar-default">
+            <div class="border border-white w-full container mx-auto hidden lg:block"></div>
+            <div class="hidden lg:flex flex flex-col lg:flex-row container mx-auto justify-around flex-wrap"
+                id="navbar-default">
                 <a href="#" class="text-base m-2">Компания</a>
                 <a href="#" class="text-base m-2">Объекты/аренда</a>
                 <a href="#" class="text-base m-2">Объекты/продажа</a>
                 <a href="#" class="text-base m-2">Продать/сдать свой объект</a>
                 <a href="#" class="text-base m-2">Полезная информация</a>
-                <a href="#" class="text-base m-2">Контакты</a> 
+                <a href="#" class="text-base m-2">Контакты</a>
                 <p class="text-base m-2 sm:hidden block">Email</p>
                 <p class="text-base m-2 flex flex-col sm:hidden block">
                     <span>+905534562314</span>
                     <span>+79055327272</span>
-                </p>               
+                </p>
             </div>
-          </nav>  
+        </nav>
     </footer>
-    
+
     <script src="Assets/JS/tail.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 </body>
+
 </html>

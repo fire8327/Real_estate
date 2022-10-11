@@ -5,6 +5,7 @@ tailwind.config = {
             'figma-gray': '#CBCBCB',
             'figma-lgray': '#F0EFF3',
             'figma-yellow': '#FFD800',
+            'figma-dyellow': '#ffc700',
             'figma-black':'#000000',            
             'figma-bg':'#F5F5F5',            
           },
