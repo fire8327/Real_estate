@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Недвижимость</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -53,12 +53,12 @@
             <div class="border border-white bg-white w-full container mx-auto"></div>
             <div class="hidden lg:flex flex flex-col lg:flex-row container mx-auto justify-around flex-wrap"
                 id="navbar-default">
-                <a href="#" class="text-base m-2">Компания</a>
-                <a href="#" class="text-base m-2">Объекты/аренда</a>
-                <a href="#" class="text-base m-2">Объекты/продажа</a>
-                <a href="#" class="text-base m-2">Продать/сдать свой объект</a>
-                <a href="#" class="text-base m-2">Полезная информация</a>
-                <a href="#" class="text-base m-2">Контакты</a>
+                <a href="#advantages" class="text-base m-2">Компания</a>
+                <a href="#rent" class="text-base m-2">Объекты/аренда</a>
+                <a href="#sell" class="text-base m-2">Объекты/продажа</a>
+                <a href="#sell/rent" class="text-base m-2">Продать/сдать свой объект</a>
+                <a href="#info" class="text-base m-2">Полезная информация</a>
+                <a href="#contacts" class="text-base m-2">Контакты</a>
                 <p class="text-base m-2 sm:hidden block">Email</p>
                 <p class="text-base m-2 flex flex-col sm:hidden block">
                     <span>+905534562314</span>
@@ -123,7 +123,7 @@
     </header>
 
     <div class="text-figma-dgray container mx-auto p-2">
-        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative">Наши преимущества<span class="с_shadow text-4xl md:text-7xl">преимущества</span></p>
+        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative" id="advantages">Наши преимущества<span class="с_shadow text-4xl md:text-7xl">преимущества</span></p>
         <div class="flex flex-col lg:flex-row justify-around">
             <div class="mx-4 flex items-center"><img src="Assets/img/adventages/advantages.png" alt="" class="w-full">
             </div>
@@ -167,7 +167,7 @@
         <div class="flex flex-col lg:flex-row lg:justify-around mb-32">
             <div class="mx-4 flex items-center"><img src="Assets/img/services/1.png" alt="" class="w-full"></div>
             <div class="flex flex-col mx-auto w-1/2 ml-12">
-                <p class="text-4xl mb-5 mt-4 lg:mt-0">Аренда объектов</p>
+                <p class="text-4xl mb-5 mt-4 lg:mt-0" id="rent">Аренда объектов</p>
                 <p class="text-xl md:h-40">Здесь можно добавить текст. Описание каждой услуги.Здесь можно добавить
                     текст.
                     Описание каждой услуги.Здесь можно добавить текст. Описание каждой услуги.Здесь можно добавить
@@ -182,7 +182,7 @@
             <div class="mx-4 flex items-center md:hidden flex"><img src="Assets/img/services/2.png" alt=""
                     class="w-full"></div>
             <div class="flex flex-col mx-auto w-1/2 ml-12">
-                <p class="text-4xl mb-5 mt-4 lg:mt-0">Продажа объектов</p>
+                <p class="text-4xl mb-5 mt-4 lg:mt-0" id="sell">Продажа объектов</p>
                 <p class="text-xl md:h-40">Здесь можно добавить текст. Описание каждой услуги.Здесь можно добавить
                     текст.
                     Описание каждой услуги.Здесь можно добавить текст. Описание каждой услуги.Здесь можно добавить
@@ -198,7 +198,7 @@
         <div class="flex flex-col lg:flex-row lg:justify-around mb-32">
             <div class="mx-4 flex items-center"><img src="Assets/img/services/3.png" alt="" class="w-full"></div>
             <div class="flex flex-col mx-auto w-1/2 ml-12">
-                <p class="text-4xl mb-5 mt-4 lg:mt-0">Продать/сдать свой объект</p>
+                <p class="text-4xl mb-5 mt-4 lg:mt-0" id="sell/rent">Продать/сдать свой объект</p>
                 <p class="text-xl md:h-40">Здесь можно добавить текст. Описание каждой услуги.Здесь можно добавить
                     текст.
                     Описание каждой услуги.Здесь можно добавить текст. Описание каждой услуги.Здесь можно добавить
@@ -218,72 +218,72 @@
                 <div class="swiper-wrapper">
                     <div
                         class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
-                        <img src="Assets/img/hot/1.png" alt="sitting area"
-                            class="object-cover object-center w-full rounded-xl -z-20" />
+                        <img src="Assets/img/hot/1.png" alt="hot"
+                            class="object-cover object-center w-full rounded-xl -z-20">
                         <div class="absolute w-full h-full p-6">
                             <h2 class="text-3xl text-white">Горячее предложение</h2>
                         </div>
                     </div>
                     <div
                         class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
-                        <img src="Assets/img/hot/1.png" alt="sitting area"
-                            class="object-cover object-center w-full rounded-xl -z-20" />
+                        <img src="Assets/img/hot/1.png" alt="hot"
+                            class="object-cover object-center w-full rounded-xl -z-20">
                         <div class="absolute w-full h-full p-6">
                             <h2 class="text-3xl text-white">Горячее предложение</h2>
                         </div>
                     </div>
                     <div
                         class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
-                        <img src="Assets/img/hot/1.png" alt="sitting area"
-                            class="object-cover object-center w-full rounded-xl -z-20" />
+                        <img src="Assets/img/hot/1.png" alt="hot"
+                            class="object-cover object-center w-full rounded-xl -z-20">
                         <div class="absolute w-full h-full p-6">
                             <h2 class="text-3xl text-white">Горячее предложение</h2>
                         </div>
                     </div>
                     <div
                         class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
-                        <img src="Assets/img/hot/1.png" alt="sitting area"
-                            class="object-cover object-center w-full rounded-xl -z-20" />
+                        <img src="Assets/img/hot/1.png" alt="hot"
+                            class="object-cover object-center w-full rounded-xl -z-20">
                         <div class="absolute w-full h-full p-6">
                             <h2 class="text-3xl text-white">Горячее предложение</h2>
                         </div>
                     </div>
                     <div
                         class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
-                        <img src="Assets/img/hot/1.png" alt="sitting area"
-                            class="object-cover object-center w-full rounded-xl -z-20" />
+                        <img src="Assets/img/hot/1.png" alt="hot"
+                            class="object-cover object-center w-full rounded-xl -z-20">
                         <div class="absolute w-full h-full p-6">
                             <h2 class="text-3xl text-white">Горячее предложение</h2>
                         </div>
                     </div>
                     <div
                         class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
-                        <img src="Assets/img/hot/1.png" alt="sitting area"
-                            class="object-cover object-center w-full rounded-xl -z-20" />
+                        <img src="Assets/img/hot/1.png" alt="hot"
+                            class="object-cover object-center w-full rounded-xl -z-20">
                         <div class="absolute w-full h-full p-6">
                             <h2 class="text-3xl text-white">Горячее предложение</h2>
                         </div>
                     </div>
                     <div
                         class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
-                        <img src="Assets/img/hot/1.png" alt="sitting area"
-                            class="object-cover object-center w-full rounded-xl -z-20" />
+                        <img src="Assets/img/hot/1.png" alt="hot"
+                            class="object-cover object-center w-full rounded-xl -z-20">
                         <div class="absolute w-full h-full p-6">
                             <h2 class="text-3xl text-white">Горячее предложение</h2>
                         </div>
                     </div>
                     <div
                         class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
-                        <img src="Assets/img/hot/1.png" alt="sitting area"
-                            class="object-cover object-center w-full rounded-xl -z-20" />
+                        <img src="Assets/img/hot/1.png" alt="hot"
+                            class="object-cover object-center w-full rounded-xl -z-20">
                         <div class="absolute w-full h-full p-6">
                             <h2 class="text-3xl text-white">Горячее предложение</h2>
                         </div>
                     </div>
                     <div
                         class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
-                        <img src="Assets/img/hot/1.png" alt="sitting area"
-                            class="object-cover object-center w-full rounded-xl -z-20" />
+                        <img src="Assets/img/hot/1.png" alt="hot"
+                            class="object-cover object-center w-full rounded-xl -z-20">
                         <div class="absolute w-full h-full p-6">
                             <h2 class="text-3xl text-white">Горячее предложение</h2>
                         </div>
@@ -312,7 +312,7 @@
     </div>
 
     <div class="text-figma-dgray container mx-auto p-2">
-        <p class="text-4xl sm:text-5xl mt-32 mb-24">Полезная информация<span class="с_shadow text-4xl md:text-7xl">информация</span></p>
+        <p class="text-4xl sm:text-5xl mt-32 mb-24" id="info">Полезная информация<span class="с_shadow text-4xl md:text-7xl">информация</span></p>
         <div
             class="w-full bg-[url('Assets/img/info/bg.png')] rounded-xl bg-no-repeat bg-center bg-cover  grid grid-cols-2 border-2 border-figma-black">
             <a href="#"
@@ -517,7 +517,7 @@
 
     <div class="text-figma-dgray container mx-auto p-2">
         <p class="text-4xl sm:text-5xl mt-32 mb-24">Связь с нами<span class="с_shadow text-4xl md:text-7xl">Связь с нами</span></p>
-        <form action=""
+        <form action="#"
             class="flex flex-col xl:flex-row border border-figma-line rounded-xl justify-around items-start xl:items-center">
             <div class="flex flex-col m-4 items-center -mt-2">
                 <div class="border-b border-figma-line my-8"><input type="text"
@@ -533,7 +533,7 @@
             <div class="flex flex-col w-full xl:w-1/2">
                 <textarea
                     class="p-432-4 rounded-xl xl:mt-28 mb-6 bg-transparent border border-figma-line md:w-1/2 lg:w-auto xl:w-full"
-                    name="" id="" rows="10" placeholder="Введите сообщение"></textarea>
+                    name="textarea" rows="10" placeholder="Введите сообщение"></textarea>
                 <button
                     class="text-base mx-4 mb-16 bg-figma-yellow rounded-3xl w-32 self-end p-2 hover:border hover:border-figma-black hover:bg-figma-dyellow mr-16 xl:mr-0"><span
                         class="text-figma-black">Отправить</span>
@@ -543,7 +543,7 @@
     </div>
 
     <div class="text-figma-dgray container mx-auto p-2 mb-36">
-        <p class="text-4xl sm:text-5xl mt-32 mb-24">Наши контакты<span class="с_shadow text-4xl md:text-7xl">контакты</span></p>
+        <p class="text-4xl sm:text-5xl mt-32 mb-24" id="contacts">Наши контакты<span class="с_shadow text-4xl md:text-7xl">контакты</span></p>
         <div class="flex flex-col lg:flex-row justify-around">
             <div class="flex-flex-col bg-figma-gray rounded-xl lg:w-1/2 m-4 h-80">
             </div>
@@ -591,14 +591,13 @@
                 </div>
             </div>
             <div class="border border-white w-full container mx-auto hidden lg:block"></div>
-            <div class="hidden lg:flex flex flex-col lg:flex-row container mx-auto justify-around flex-wrap"
-                id="navbar-default">
-                <a href="#" class="text-base m-2">Компания</a>
-                <a href="#" class="text-base m-2">Объекты/аренда</a>
-                <a href="#" class="text-base m-2">Объекты/продажа</a>
-                <a href="#" class="text-base m-2">Продать/сдать свой объект</a>
-                <a href="#" class="text-base m-2">Полезная информация</a>
-                <a href="#" class="text-base m-2">Контакты</a>
+            <div class="hidden lg:flex flex flex-col lg:flex-row container mx-auto justify-around flex-wrap">
+                <a href="#advantages" class="text-base m-2">Компания</a>
+                <a href="#rent" class="text-base m-2">Объекты/аренда</a>
+                <a href="#sell" class="text-base m-2">Объекты/продажа</a>
+                <a href="#sell/rent" class="text-base m-2">Продать/сдать свой объект</a>
+                <a href="#info" class="text-base m-2">Полезная информация</a>
+                <a href="#contacts" class="text-base m-2">Контакты</a>
                 <p class="text-base m-2 sm:hidden block">Email</p>
                 <p class="text-base m-2 flex flex-col sm:hidden block">
                     <span>+905534562314</span>
