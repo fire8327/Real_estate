@@ -1,7 +1,80 @@
 body {    
-font-family: 'Roboto', sans-serif;
-}
-
-input {
-   border: none; outline: none;
-}
+   font-family: 'Roboto', sans-serif;
+   }
+   
+   input {
+      border: none; outline: none;
+   }
+   /* Стили Swiper */
+   
+   .mySwiper{
+     /*  width: 100%;   */ 
+   }
+   
+   .swiper-slide{
+      /* height: 400px; */
+   }
+   
+   .swiper .swiper-slide img{
+      /* height: 100%; */
+      width: 100%;
+      object-fit: cover;
+   }
+   
+   .swiper-pagination-current{
+      font-size: 48px;
+      font-family: 'Roboto', sans-serif;   
+   }
+   
+   .swiper-pagination-total{
+      font-size: 32px;   
+      font-family: 'Roboto', sans-serif;
+   }
+   .swiper-pagination {
+      position: static;  
+      color: #D9D9D9; 
+   }
+   
+   .swiper-navigation{   
+      position: absolute;
+      display: flex;
+      width: max-content;
+      bottom: 10%;
+      right: 0;
+   }
+   
+   .hot .swiper-button-next,.video .swiper-button-next {
+      right: -30px;
+      left: auto;
+   }
+   
+   .hot .swiper-button-prev,.video .swiper-button-prev {
+      left: -30px;
+      right: auto;
+   }
+   
+   
+   
+   .mySwiper .swiper-button-next, .mySwiper .swiper-button-prev {
+      position: static;   
+      width: auto;
+      height: auto;
+      margin-top: auto;       
+   }
+   
+   .swiper-button-next:after, .swiper-button-prev:after {
+      content: none;
+   }
+   
+   @media (max-width:1100px){
+      .hot .swiper-button-next,.video .swiper-button-next {
+         right: 0px;      
+      }
+      
+      .hot .swiper-button-prev,.video .swiper-button-prev {
+         left: 0px;
+      }
+      .slider2 path,.slider3 path {
+         fill:white;
+      }
+   }

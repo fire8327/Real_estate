@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Недвижимость</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,6 +66,47 @@
                 </p>
             </div>
         </nav>
+
+
+        <div class="relative container mx-auto pt-12 pb-24">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="Assets/img/header/bg.png" alt=""></div>
+                  <div class="swiper-slide"><img src="Assets/img/header/bg.png" alt=""></div>
+                  <div class="swiper-slide"><img src="Assets/img/header/bg.png" alt=""></div>
+                  <div class="swiper-slide"><img src="Assets/img/header/bg.png" alt=""></div>
+                  <div class="swiper-slide"><img src="Assets/img/header/bg.png" alt=""></div>
+                </div>
+                <div class="swiper-navigation">                
+                    <div class="swiper-button-prev">
+                        <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.292892 7.2929C-0.0976315 7.68342 -0.0976314 8.31658 0.292893 8.70711L6.65686 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538409 7.04738 0.538409 6.65685 0.928933L0.292892 7.2929ZM21 7L1 7L1 9L21 9L21 7Z" fill="#D9D9D9"/>
+                            </svg></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"><svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928932C13.9526 0.538408 13.3195 0.538408 12.9289 0.928932C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM0 9L20 9V7L0 7L0 9Z" fill="#D9D9D9"/>
+                        </svg></div>
+                </div>  
+                <div class="flex flex-row items-start text-figma-black bg-figma-head opacity-75 rounded-bl-xl ">
+                    <div class="flex flex-row border border-figma-black h-full rounded-bl-xl">
+                        <img src="Assets/img/header/1.png" class="p-4" alt="">
+                        <p class="text-xl">Сделка под ключ с получением ВНЖ и гражданства</p>
+                    </div>
+                    <div class="flex flex-row border border-figma-black h-full">
+                        <img src="Assets/img/header/2.png" class="p-4" alt="">
+                        <p class="text-xl">Более 150 собственных объектов</p>
+                    </div>
+                    <div class="flex flex-row border border-figma-black h-full">
+                        <img src="Assets/img/header/3.png" class="p-4" alt="">
+                        <p class="text-xl">Продажа, сдача и управление объектами</p>
+                    </div>
+                    <div class="flex flex-row border border-figma-black h-full rounded-br-xl">
+                        <img src="Assets/img/header/4.png" class="p-4" alt="">
+                        <p class="text-xl">Включено проживание в отеле и VIP трансфер</p>
+                    </div>
+                </div>          
+              </div>
+        </div>
     </header>
 
     <div class="text-figma-dgray container mx-auto p-2">
@@ -150,54 +192,75 @@
 
     <div class="text-figma-dgray container mx-auto p-2 flex flex-col">
         <p class="text-4xl sm:text-5xl mt-32 mb-24">Горячие предложения</p>
-        <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
-            <div class="w-full relative flex items-center justify-center">
-                <button aria-label="slide backward" class="absolute z-30 left-0 -ml-4 xl:-ml-10 cursor-pointer" id="prev2">
-                    <svg class="text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
-                <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
-                    <div id="slider2" class="h-full flex lg:gap-16 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
-                            <img src="Assets/img/hot/1.png" alt="sitting area" class="object-cover object-center w-full rounded-xl -z-20" />
-                            <div class="absolute w-full h-full p-6">
-                                <h2 class="text-3xl text-white">Горячее предложение</h2>
-                            </div>
-                        </div>     
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
-                            <img src="Assets/img/hot/1.png" alt="sitting area" class="object-cover object-center w-full rounded-xl -z-20" />
-                            <div class="absolute w-full h-full p-6">
-                                <h2 class="text-3xl text-white">Горячее предложение</h2>
-                            </div>
-                        </div>   
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
-                            <img src="Assets/img/hot/1.png" alt="sitting area" class="object-cover object-center w-full rounded-xl -z-20" />
-                            <div class="absolute w-full h-full p-6">
-                                <h2 class="text-3xl text-white">Горячее предложение</h2>
-                            </div>
-                        </div>   
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
-                            <img src="Assets/img/hot/1.png" alt="sitting area" class="object-cover object-center w-full rounded-xl -z-20" />
-                            <div class="absolute w-full h-full p-6">
-                                <h2 class="text-3xl text-white">Горячее предложение</h2>
-                            </div>
-                        </div>   
-                        <div class="flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
-                            <img src="Assets/img/hot/1.png" alt="sitting area" class="object-cover object-center w-full rounded-xl -z-20" />
-                            <div class="absolute w-full h-full p-6">
-                                <h2 class="text-3xl text-white">Горячее предложение</h2>
-                            </div>
-                        </div>   
-                    </div>
-                </div>
-                <button aria-label="slide forward" class="absolute z-30 right-0 -mr-4 xl:-mr-10" id="next2">
-                    <svg class="text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
+        <div class="relative container hot mx-auto">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
+                                <img src="Assets/img/hot/1.png" alt="sitting area" class="object-cover object-center w-full rounded-xl -z-20" />
+                                <div class="absolute w-full h-full p-6">
+                                    <h2 class="text-3xl text-white">Горячее предложение</h2>
+                                </div>
+                            </div> 
+                  <div class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
+                                <img src="Assets/img/hot/1.png" alt="sitting area" class="object-cover object-center w-full rounded-xl -z-20" />
+                                <div class="absolute w-full h-full p-6">
+                                    <h2 class="text-3xl text-white">Горячее предложение</h2>
+                                </div>
+                            </div> 
+                  <div class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
+                                <img src="Assets/img/hot/1.png" alt="sitting area" class="object-cover object-center w-full rounded-xl -z-20" />
+                                <div class="absolute w-full h-full p-6">
+                                    <h2 class="text-3xl text-white">Горячее предложение</h2>
+                                </div>
+                            </div> 
+                  <div class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
+                                <img src="Assets/img/hot/1.png" alt="sitting area" class="object-cover object-center w-full rounded-xl -z-20" />
+                                <div class="absolute w-full h-full p-6">
+                                    <h2 class="text-3xl text-white">Горячее предложение</h2>
+                                </div>
+                            </div> 
+                  <div class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
+                                <img src="Assets/img/hot/1.png" alt="sitting area" class="object-cover object-center w-full rounded-xl -z-20" />
+                                <div class="absolute w-full h-full p-6">
+                                    <h2 class="text-3xl text-white">Горячее предложение</h2>
+                                </div>
+                            </div> 
+                  <div class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
+                                <img src="Assets/img/hot/1.png" alt="sitting area" class="object-cover object-center w-full rounded-xl -z-20" />
+                                <div class="absolute w-full h-full p-6">
+                                    <h2 class="text-3xl text-white">Горячее предложение</h2>
+                                </div>
+                            </div> 
+                  <div class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
+                                <img src="Assets/img/hot/1.png" alt="sitting area" class="object-cover object-center w-full rounded-xl -z-20" />
+                                <div class="absolute w-full h-full p-6">
+                                    <h2 class="text-3xl text-white">Горячее предложение</h2>
+                                </div>
+                            </div> 
+                  <div class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
+                                <img src="Assets/img/hot/1.png" alt="sitting area" class="object-cover object-center w-full rounded-xl -z-20" />
+                                <div class="absolute w-full h-full p-6">
+                                    <h2 class="text-3xl text-white">Горячее предложение</h2>
+                                </div>
+                            </div> 
+                  <div class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto bg-figma-dgray bg-opacity-30 rounded-xl z-21">
+                                <img src="Assets/img/hot/1.png" alt="sitting area" class="object-cover object-center w-full rounded-xl -z-20" />
+                                <div class="absolute w-full h-full p-6">
+                                    <h2 class="text-3xl text-white">Горячее предложение</h2>
+                                </div>
+                            </div> 
+                </div>                        
             </div>
-        </div>      
+            <div class="swiper-button-next">
+                <svg class="slider2" width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928932C13.9526 0.538408 13.3195 0.538408 12.9289 0.928932C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM0 9L20 9V7L0 7L0 9Z" fill="#10242E"/>
+                </svg>   </div>              
+            <div class="swiper-button-prev">
+                <svg class="slider2" width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.292892 7.2929C-0.0976315 7.68342 -0.0976314 8.31658 0.292893 8.70711L6.65686 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538409 7.04738 0.538409 6.65685 0.928933L0.292892 7.2929ZM21 7L1 7L1 9L21 9L21 7Z" fill="#10242E"/>
+                </svg>
+                </div>
+        </div>     
         <button class="bg-transparent border-2 border-figma-yellow w-48 rounded-3xl p-1 mt-12 hover:bg-figma-dyellow w-full self-end">Подробнее</button>
     </div>
 
@@ -259,7 +322,7 @@
                     
                 </div>
             </a>
-            <a href="#" class="flex flex-col h-52 md:h-36 bg-white bg-opacity-50 hover:opacity-70 w-full hover:bg-figma-yellow border-b-2 border-l-2 border-figma-blac">
+            <a href="#" class="flex flex-col h-52 md:h-36 bg-white bg-opacity-50 hover:opacity-70 w-full hover:bg-figma-yellow border-b-2 border-l-2 border-figma-black">
                 <div class="flex flex-col md:flex-row items-center">
                     <img src="Assets/img/info/6.png" alt="" class="m-6 w-16">
                     <p class="h-12 md:h-auto">Медицина в Турции</p>
@@ -295,56 +358,46 @@
 
     <div class="text-figma-dgray container mx-auto p-2">
         <p class="text-4xl sm:text-5xl mt-32 mb-24">Наши видеообзоры</p>
-        <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
-            <div class="w-full relative flex items-center justify-center">
-                <button aria-label="slide backward" class="absolute z-30 left-0 -ml-4 xl:-ml-10 cursor-pointer" id="prev">
-                    <svg class="text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
-                <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
-                    <div id="slider" class="h-full flex lg:gap-16 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
-                        <div class="flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">   
-                            <img class="rounded-xl" src="Assets/img/video/bg.png" alt="">                            
-                            <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.1 </p>                   
-                        </div>
-                        <div class="flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">   
-                            <img class="rounded-xl" src="Assets/img/video/bg.png" alt="">                            
-                            <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.2 </p>                   
-                        </div>   
-                        <div class="flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">   
-                            <img class="rounded-xl" src="Assets/img/video/bg.png" alt="">                            
-                            <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.3</p>                   
-                        </div>   
-                        <div class="flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">   
-                            <img class="rounded-xl" src="Assets/img/video/bg.png" alt="">                            
-                            <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.4 </p>                   
-                        </div>    
-                        <div class="flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">   
-                            <img class="rounded-xl" src="Assets/img/video/bg.png" alt="">                            
-                            <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.5 </p>                   
-                        </div>
-                        <div class="flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">   
-                            <img class="rounded-xl" src="Assets/img/video/bg.png" alt="">                            
-                            <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.6 </p>                   
-                        </div>   
-                        <div class="flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">   
-                            <img class="rounded-xl" src="Assets/img/video/bg.png" alt="">                            
-                            <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.7 </p>                   
-                        </div>   
-                        <div class="flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">   
-                            <img class="rounded-xl" src="Assets/img/video/bg.png" alt="">                            
-                            <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.8 </p>                   
-                        </div>                     
+        <div class="relative container video mx-auto">
+            <div class="swiper mySwiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">   
+                        <img class="rounded-xl" src="Assets/img/video/bg.png" alt="">                            
+                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.1 </p>                   
                     </div>
-                </div>
-                <button aria-label="slide forward" class="absolute z-30 right-0 -mr-4 xl:-mr-10" id="next">
-                    <svg class="text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
+                    <div class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">   
+                        <img class="rounded-xl" src="Assets/img/video/bg.png" alt="">                            
+                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.1 </p>                   
+                    </div>
+                    <div class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">   
+                        <img class="rounded-xl" src="Assets/img/video/bg.png" alt="">                            
+                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.1 </p>                   
+                    </div>
+                    <div class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">   
+                        <img class="rounded-xl" src="Assets/img/video/bg.png" alt="">                            
+                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.1 </p>                   
+                    </div>
+                    <div class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">   
+                        <img class="rounded-xl" src="Assets/img/video/bg.png" alt="">                            
+                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.1 </p>                   
+                    </div>
+                    <div class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">   
+                        <img class="rounded-xl" src="Assets/img/video/bg.png" alt="">                            
+                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым.1 </p>                   
+                    </div>
+                </div>                        
             </div>
-        </div>       
+            <div class="swiper-button-next">
+                <svg class="slider3" width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928932C13.9526 0.538408 13.3195 0.538408 12.9289 0.928932C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM0 9L20 9V7L0 7L0 9Z" fill="#10242E"/>
+                </svg>   
+            </div>              
+            <div class="swiper-button-prev">
+                <svg class="slider3" width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.292892 7.2929C-0.0976315 7.68342 -0.0976314 8.31658 0.292893 8.70711L6.65686 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538409 7.04738 0.538409 6.65685 0.928933L0.292892 7.2929ZM21 7L1 7L1 9L21 9L21 7Z" fill="#10242E"/>
+                </svg>
+            </div>
+        </div>      
     </div>
 
     <div class="text-figma-dgray container mx-auto p-2">
@@ -471,7 +524,8 @@
         </nav>
     </footer>
 
-    <script src="Assets/JS/tail.js"></script>
+    <script src="Assets/JS/tail.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="Assets/JS/slider.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
     </body>
