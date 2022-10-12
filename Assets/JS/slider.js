@@ -28,3 +28,30 @@ let defaultTransform = 0;
             slider2.style.transform = "translateX(" + defaultTransform + "px)";
         }
         prev2.addEventListener("click", goPrev2);
+
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 13,
+            slidesPerView: 3,
+            freeMode: true,
+            watchSlidesProgress: true,   
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+              },     
+            navigation: {
+                nextEl: ".swiper-button-next"            
+              },
+
+            breakpoints: {            
+                768: {
+                  slidesPerView: 5,   
+                  spaceBetween: 17,           
+                },  
+    
+                449: {
+                  slidesPerView: 4,   
+    
+                },    
+            }        
+          });
