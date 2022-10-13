@@ -101,22 +101,4 @@ body {
          bottom: 19%;
       }
    }
-   @media (max-width:640px) {
-      .с_shadow
-   {
-      left: 100px;
-   }
-   }
-   @media (max-width:520px) {
-      .с_shadow
-   {
-      left: 80px;
-   }
-   }
-   @media (min-width:320px) and (max-width:372px) {
-      .с_shadow
-   {
-      left: 20px;
-      top: 60px;
-   }
-   }
+
