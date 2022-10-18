@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О нас</title>
+    <title>Контакты</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css">
@@ -69,6 +69,58 @@
     </header>
 
     <div class="text-figma-dgray container mx-auto p-2">
+        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative" id="contacts">Наши контакты<span
+                class="с_shadow hidden lg:block text-4xl lg:text-6xl">контакты</span></p>
+        <div class="flex flex-col lg:flex-row justify-around">
+            <div class="flex-flex-col bg-figma-gray rounded-xl lg:w-1/2 m-4 h-80">
+            </div>
+            <div class="flex-flex-col lg:w-1/2 m-4 items-start">
+                <p class="mb-10">Адрес:</p>
+                <p class="mb-10">Почта:</p>
+                <div class="flex flex-row justtify-around">
+                    <p class="mb-10">Телефон:</p>
+                    <p class="ml-10">+905534562314 <br>
+                        +79055327272</p>
+                </div>
+                <div class="w-full flex justify-end">
+                    <button
+                        class="text-base mx-4 h-10 mb-16 border-2 border-figma-dgray bg-figma-dgray rounded-3xl w-32 p-2 hover:border-2 hover:border-figma-black hover:bg-gray-700"><span
+                            class="text-white">Отправить</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-figma-dgray container mx-auto p-2">
+        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative">Связь с нами<span
+                class="с_shadow hidden lg:block text-4xl lg:text-6xl">Связь с нами</span></p>
+        <form action="#"
+            class="flex flex-col xl:flex-row border border-figma-line rounded-xl justify-around items-start xl:items-center">
+            <div class="flex flex-col m-4 items-center -mt-2">
+                <div class="border-b border-figma-line my-8"><input type="text"
+                        class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none"
+                        placeholder="Ваше имя"></div>
+                <div class="border-b border-figma-line my-8"><input type="text"
+                        class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none"
+                        placeholder="Купить/арендовать/сдать"></div>
+                <div class="border-b border-figma-line my-8"><input type="text"
+                        class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none"
+                        placeholder="Ваш телефон"></div>
+            </div>
+            <div class="flex flex-col w-full xl:w-1/2">
+                <textarea
+                    class="p-4 m-4 rounded-xl xl:mt-28 mb-6 bg-transparent border border-figma-line md:w-1/2 lg:w-auto xl:w-full"
+                    name="textarea" rows="10" placeholder="Введите сообщение"></textarea>
+                <button
+                    class="text-base mx-4 mb-16 border-2 border-figma-yellow h-10 bg-figma-yellow rounded-3xl w-32 self-end p-2 hover:h-10 hover:border-2 hover:border-figma-black hover:bg-figma-dyellow mr-16 xl:mr-0"><span
+                        class="text-figma-black">Отправить</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="text-figma-dgray container mx-auto p-2">
         <p class="text-4xl sm:text-5xl mt-32 mb-24 relative">Почему МЫ<span
                 class="с_shadow hidden lg:block text-4xl lg:text-6xl">Почему МЫ</span></p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-20">
@@ -110,53 +162,7 @@
         </div>
     </div>
 
-    <div class="text-figma-dgray container mx-auto p-2">
-        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative" id="contacts">Наша философия<span
-                class="с_shadow hidden lg:block text-4xl lg:text-6xl">философия</span></p>
-        <div class="flex flex-col lg:flex-row justify-around items-center gap-2 lg:items-start">
-            <img src="../Assets/img/philosophy/philosophy.svg" alt="" class="lg:w-1/2">
-            <p class="text-3xl text-figma-black w-full lg:w-1/2 lg:px-4">Создавая бизнес, любой собственник вкладывает в
-                свою компанию сокровенный замысел, который в последствии откликнется в сердцах клиентов и станет
-                движущей силой для всех сотрудников.
-            </p>
-        </div>
-        <div class="w-10/12 mx-auto">
-            <div class="flex justify-center items-center my-24">
-                <div class="bg-figma-black border border-figma-black rotate-45 w-1 h-1"></div>
-                <div class="bg-figma-black border border-figma-black w-full h-px"></div>
-                <div class="bg-figma-black border border-figma-black rotate-45 w-1 h-1"></div>
-            </div>
-            <div class="flex flex-col lg:flex-row items-center text-center text-3xl sm:text-4xl">
-                <p>
-                    Мы видим это так: <br>
-                    “Профессиональный сервис по аренде и продаже недвижимости для тех, кто видит свое будущее в
-                    регулярном посещении или постоянном пребывании в стране с одним из самых высоких темпов роста
-                    экономики и где 340 солнечных дней в году.”
-                </p>
-            </div>
-            <div class="flex justify-center items-center my-24">
-                <div class="bg-figma-black border border-figma-black rotate-45 w-1 h-1"></div>
-                <div class="bg-figma-black border border-figma-black w-full h-px"></div>
-                <div class="bg-figma-black border border-figma-black rotate-45 w-1 h-1"></div>
-            </div>
-        </div>
-        <div class="flex flex-col lg:flex-row justify-around items-center gap-2 lg:items-start">
-            <div class="w-full lg:w-1/2 flex flex-col lg:px-4">
-                <p class="text-3xl text-figma-black pb-2">
-                    За 15 лет построения бизнеса в России и Украине собственники компании сами столкнулись с
-                    многочисленными вопросами в процессе релокации семей, подбора недвижимости, решению эмиграционных
-                    вопросов, а также с сомнительным сервисом.
-                </p>
-                <p class="text-3xl text-figma-black pt-2 break-words">
-                    Именно по этой причине, этот не совсем успешный опыт позволяет нам уверенно утверждать, что мы
-                    создали одну из самых клиентоориентированых компаний для русскоязычной аудитории, где смогли
-                    сохранить привычно высокий уровень сервиса.
-            </div>
-            <div class="w-full lg:w-1/2 bg-figma-gray h-130 rounded-xl"></div>
-        </div>
-    </div>
-
-    <div class="text-figma-dgray container mx-auto p-2">
+    <div class="text-figma-dgray container mx-auto p-2 mb-36">
         <p class="text-4xl sm:text-5xl mt-32 mb-24 relative" id="contacts">Наши сертификаты и лицензии<span
                 class="с_shadow hidden lg:block text-4xl lg:text-6xl">сертификаты и лицензии</span></p>
         <div class="flex flex-col lg:flex-row">
@@ -167,80 +173,6 @@
             <div class="w-full lg:w-1/2 flex flex-col lg:items-start p-2">
                 <div class="w-full bg-figma-gray h-80 rounded-xl"></div>
                 <p class="pt-4 text-3xl">Лицензия</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="text-figma-dgray container mx-auto p-2">
-        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative" id="contacts">Наш коллектив<span
-                class="с_shadow hidden lg:block text-4xl lg:text-6xl">коллектив</span></p>
-        <div class="flex flex-col lg:flex-row">
-            <div class="w-full lg:w-1/3 flex flex-col lg:items-start p-3">
-                <div class="w-full bg-figma-gray h-80 rounded-xl"></div>
-                <p class="pt-7 text-2xl">Руководитель компании</p>
-                <p class="pt-5 text-xl">Email</p>
-            </div>
-            <div class="w-full lg:w-1/3 flex flex-col lg:items-start p-3">
-                <div class="w-full bg-figma-gray h-80 rounded-xl"></div>
-                <p class="pt-7 text-2xl">Юридический отдел</p>
-                <p class="pt-5 text-xl">Email</p>
-            </div>
-            <div class="w-full lg:w-1/3 flex flex-col lg:items-start p-3">
-                <div class="w-full bg-figma-gray h-80 rounded-xl"></div>
-                <p class="pt-7 text-2xl">Директор по продажам</p>
-                <p class="pt-5 text-xl">Email</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="text-figma-dgray container mx-auto p-2">
-        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative">Связь с нами<span
-                class="с_shadow hidden lg:block text-4xl lg:text-6xl">Связь с нами</span></p>
-        <form action="#"
-            class="flex flex-col xl:flex-row border border-figma-line rounded-xl justify-around items-start xl:items-center">
-            <div class="flex flex-col m-4 items-center -mt-2">
-                <div class="border-b border-figma-line my-8"><input type="text"
-                        class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none"
-                        placeholder="Ваше имя"></div>
-                <div class="border-b border-figma-line my-8"><input type="text"
-                        class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none"
-                        placeholder="Купить/арендовать/сдать"></div>
-                <div class="border-b border-figma-line my-8"><input type="text"
-                        class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none"
-                        placeholder="Ваш телефон"></div>
-            </div>
-            <div class="flex flex-col w-full xl:w-1/2">
-                <textarea
-                    class="p-4 m-4 rounded-xl xl:mt-28 mb-6 bg-transparent border border-figma-line md:w-1/2 lg:w-auto xl:w-full"
-                    name="textarea" rows="10" placeholder="Введите сообщение"></textarea>
-                <button
-                    class="text-base mx-4 mb-16 border-2 border-figma-yellow h-10 bg-figma-yellow rounded-3xl w-32 self-end p-2 hover:h-10 hover:border-2 hover:border-figma-black hover:bg-figma-dyellow mr-16 xl:mr-0"><span
-                        class="text-figma-black">Отправить</span>
-                </button>
-            </div>
-        </form>
-    </div>
-
-    <div class="text-figma-dgray container mx-auto p-2 mb-36">
-        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative" id="contacts">Наши контакты<span
-                class="с_shadow hidden lg:block text-4xl lg:text-6xl">контакты</span></p>
-        <div class="flex flex-col lg:flex-row justify-around">
-            <div class="flex-flex-col bg-figma-gray rounded-xl lg:w-1/2 m-4 h-80">
-            </div>
-            <div class="flex-flex-col lg:w-1/2 m-4 items-start">
-                <p class="mb-10">Адрес:</p>
-                <p class="mb-10">Почта:</p>
-                <div class="flex flex-row justtify-around">
-                    <p class="mb-10">Телефон:</p>
-                    <p class="ml-10">+905534562314 <br>
-                        +79055327272</p>
-                </div>
-                <div class="w-full flex justify-end">
-                    <button
-                        class="text-base mx-4 h-10 mb-16 border-2 border-figma-dgray bg-figma-dgray rounded-3xl w-32 p-2 hover:border-2 hover:border-figma-black hover:bg-gray-700"><span
-                            class="text-white">Отправить</span>
-                    </button>
-                </div>
             </div>
         </div>
     </div>

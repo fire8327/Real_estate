@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полезная информация</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Assets/CSS/style.css">
+</head>
+
+<body class="bg-figma-bg">
+    <header class="bg-figma-dgray">
+        <nav class="text-white lg:pb-6">
+            <div class="container flex flex-col lg:flex-row justify-between items-center mx-auto p-4">
+                <div class="flex flex-col sm:flex-row items-center">
+                    <a href="#" class="m-4">
+                        <h3 class="text-3xl">ЛОГО</h3>
+                    </a>
+                    <p class="text-2xl m-4 text-center">Работайте с профессионалами</p>
+                </div>
+                <div class="flex flex-row text-base">
+                    <p class="text-base mx-4 hidden sm:flex sm:flex-col">Email</p>
+                    <p class="text-base mx-4 flex flex-col hidden sm:flex sm:flex-col">
+                        <span>+905534562314</span>
+                        <span>+79055327272</span>
+                    </p>
+                    <button
+                        class="text-base h-12 border-2 border-figma-dgray mx-4 bg-figma-yellow rounded-3xl px-4 hover:border-2 hover:border-figma-black hover:bg-figma-dyellow"><span
+                            class="text-figma-black">Обратный звонок</span></button>
+                    <div class="text-base mx-4 flex flex-row items-center">
+                        <img class="w-8 h-8 m-1" src="../Assets/img/header/nav.png" alt="">
+                        <img class="w-8 h-8 m-1" src="../Assets/img/header/nav.png" alt="">
+                    </div>
+                    <button data-collapse-toggle="navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                        type="button" class="lg:hidden">
+                        <svg class="w-8 h-8 m-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="border border-white bg-white w-full container mx-auto"></div>
+            <div class="hidden lg:flex flex flex-col lg:flex-row container mx-auto justify-around flex-wrap"
+                id="navbar-default">
+                <a href="#advantages" class="text-base m-2">Компания</a>
+                <a href="#rent" class="text-base m-2">Объекты/аренда</a>
+                <a href="#sell" class="text-base m-2">Объекты/продажа</a>
+                <a href="#sell/rent" class="text-base m-2">Продать/сдать свой объект</a>
+                <a href="#info" class="text-base m-2">Полезная информация</a>
+                <a href="#contacts" class="text-base m-2">Контакты</a>
+                <p class="text-base m-2 sm:hidden block">Email</p>
+                <p class="text-base m-2 flex flex-col sm:hidden block">
+                    <span>+905534562314</span>
+                    <span>+79055327272</span>
+                </p>
+            </div>
+        </nav>
+    </header>
+
+    <div class="text-figma-dgray container mx-auto p-2">
+        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative" id="info">Полезная информация<span
+                class="с_shadow hidden lg:block text-4xl lg:text-6xl">информация</span></p>
+        <div
+            class="w-full bg-[url('../Assets/img/info/bg.png')] rounded-xl bg-no-repeat bg-center bg-cover  grid grid-cols-2 border-2 border-figma-black">
+            <a href="#"
+                class="flex flex-col h-52 md:h-36 bg-white bg-opacity-50 hover:opacity-70 w-full hover:bg-figma-yellow border-b-2 border-figma-black rounded-tl-xl">
+                <div class="flex flex-col md:flex-row items-center">
+                    <img src="../Assets/img/info/1.png" alt="" class="m-6 w-16">
+                    <p class="h-12 md:h-auto">Покупка квартиры/ дома</p>
+                </div>
+                <div class="mt-4 md:mt-0 flex flex-row self-end align-middle items-center">
+                    <p>Подробнее</p>
+                    <img src="../Assets/img/info/arrow.png" alt="" class="w-8 h-2 m-2">
+
+                </div>
+            </a>
+            <a href="#"
+                class="flex flex-col h-52 md:h-36 bg-white bg-opacity-50 hover:opacity-70 w-full hover:bg-figma-yellow border-b-2 border-l-2 border-figma-black rounded-tr-xl">
+                <div class="flex flex-col md:flex-row items-center">
+                    <img src="../Assets/img/info/2.png" alt="" class="m-6 w-16">
+                    <p class="h-12 md:h-auto">Аренда квартиры/ дома</p>
+                </div>
+                <div class="mt-4 md:mt-0 flex flex-row self-end align-middle items-center">
+                    <p>Подробнее</p>
+                    <img src="../Assets/img/info/arrow.png" alt="" class="w-8 h-2 m-2">
+
+                </div>
+            </a>
+            <a href="#"
+                class="flex flex-col h-52 md:h-36 bg-white bg-opacity-50 hover:opacity-70 w-full hover:bg-figma-yellow border-b-2 border-figma-black">
+                <div class="flex flex-col md:flex-row items-center">
+                    <img src="../Assets/img/info/3.png" alt="" class="m-6 w-16">
+                    <p class="h-12 md:h-auto">Налогообложение</p>
+                </div>
+                <div class="mt-4 md:mt-0 flex flex-row self-end align-middle items-center">
+                    <p>Подробнее</p>
+                    <img src="../Assets/img/info/arrow.png" alt="" class="w-8 h-2 m-2">
+
+                </div>
+            </a>
+            <a href="#"
+                class="flex flex-col h-52 md:h-36 bg-white bg-opacity-50 hover:opacity-70 w-full hover:bg-figma-yellow border-b-2 border-l-2 border-figma-black">
+                <div class="flex flex-col md:flex-row items-center">
+                    <img src="../Assets/img/info/4.png" alt="" class="m-6 w-16">
+                    <p class="h-12 md:h-auto">Получение и продление ВНЖ</p>
+                </div>
+                <div class="mt-4 md:mt-0 flex flex-row self-end align-middle items-center">
+                    <p>Подробнее</p>
+                    <img src="../Assets/img/info/arrow.png" alt="" class="w-8 h-2 m-2">
+
+                </div>
+            </a>
+            <a href="#"
+                class="flex flex-col h-52 md:h-36 bg-white bg-opacity-50 hover:opacity-70 w-full hover:bg-figma-yellow border-b-2 border-figma-black">
+                <div class="flex flex-col md:flex-row items-center">
+                    <img src="../Assets/img/info/5.png" alt="" class="m-6 w-16">
+                    <p class="h-12 md:h-auto">Образование детей</p>
+                </div>
+                <div class="mt-4 md:mt-0 flex flex-row self-end align-middle items-center">
+                    <p>Подробнее</p>
+                    <img src="../Assets/img/info/arrow.png" alt="" class="w-8 h-2 m-2">
+
+                </div>
+            </a>
+            <a href="#"
+                class="flex flex-col h-52 md:h-36 bg-white bg-opacity-50 hover:opacity-70 w-full hover:bg-figma-yellow border-b-2 border-l-2 border-figma-black">
+                <div class="flex flex-col md:flex-row items-center">
+                    <img src="../Assets/img/info/6.png" alt="" class="m-6 w-16">
+                    <p class="h-12 md:h-auto">Медицина в Турции</p>
+                </div>
+                <div class="mt-4 md:mt-0 flex flex-row self-end align-middle items-center">
+                    <p>Подробнее</p>
+                    <img src="../Assets/img/info/arrow.png" alt="" class="w-8 h-2 m-2">
+
+                </div>
+            </a>
+            <a href="#"
+                class="flex flex-col h-52 md:h-36 bg-white bg-opacity-50 hover:opacity-70 w-full hover:bg-figma-yellow rounded-bl-lg">
+                <div class="flex flex-col md:flex-row items-center">
+                    <img src="../Assets/img/info/7.png" alt="" class="m-6 w-16">
+                    <p class="h-12 md:h-auto">Получение гражданства</p>
+                </div>
+                <div class="mt-4 md:mt-0 flex flex-row self-end align-middle items-center">
+                    <p>Подробнее</p>
+                    <img src="../Assets/img/info/arrow.png" alt="" class="w-8 h-2 m-2">
+                </div>
+            </a>
+            <a href="#"
+                class="flex flex-col h-52 md:h-36 bg-white bg-opacity-50 hover:opacity-70 w-full hover:bg-figma-yellow border-l-2 border-figma-black rounded-br-lg">
+                <div class="flex flex-col md:flex-row items-center">
+                    <img src="../Assets/img/info/8.png" alt="" class="m-6 w-16">
+                    <p class="h-12 md:h-auto">Развлечение и досуг в Анталии и Алании</p>
+                </div>
+                <div class="mt-4 md:mt-0 flex flex-row self-end align-middle items-center">
+                    <p>Подробнее</p>
+                    <img src="../Assets/img/info/arrow.png" alt="" class="w-8 h-2 m-2">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="text-figma-dgray container mx-auto p-2">
+        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative">Наши видеообзоры<span
+                class="с_shadow hidden lg:block text-4xl lg:text-6xl">видеообзоры</span></p>
+        <div class="relative container video mx-auto">
+            <div class="swiper mySwiper3">
+                <div class="swiper-wrapper">
+                    <div
+                        class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">
+                        <img class="rounded-xl" src="../Assets/img/video/bg.png" alt="">
+                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно
+                            быстро заполнить макеты или прототипы содержимым. </p>
+                    </div>
+                    <div
+                        class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">
+                        <img class="rounded-xl" src="../Assets/img/video/bg.png" alt="">
+                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно
+                            быстро заполнить макеты или прототипы содержимым. </p>
+                    </div>
+                    <div
+                        class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">
+                        <img class="rounded-xl" src="../Assets/img/video/bg.png" alt="">
+                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно
+                            быстро заполнить макеты или прототипы содержимым. </p>
+                    </div>
+                    <div
+                        class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">
+                        <img class="rounded-xl" src="../Assets/img/video/bg.png" alt="">
+                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно
+                            быстро заполнить макеты или прототипы содержимым. </p>
+                    </div>
+                    <div
+                        class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">
+                        <img class="rounded-xl" src="../Assets/img/video/bg.png" alt="">
+                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно
+                            быстро заполнить макеты или прототипы содержимым. </p>
+                    </div>
+                    <div
+                        class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">
+                        <img class="rounded-xl" src="../Assets/img/video/bg.png" alt="">
+                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно
+                            быстро заполнить макеты или прототипы содержимым. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next">
+                <svg class="slider3" width="21" height="16" viewBox="0 0 21 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928932C13.9526 0.538408 13.3195 0.538408 12.9289 0.928932C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM0 9L20 9V7L0 7L0 9Z"
+                        fill="#10242E" />
+                </svg>
+            </div>
+            <div class="swiper-button-prev">
+                <svg class="slider3" width="21" height="16" viewBox="0 0 21 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.292892 7.2929C-0.0976315 7.68342 -0.0976314 8.31658 0.292893 8.70711L6.65686 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538409 7.04738 0.538409 6.65685 0.928933L0.292892 7.2929ZM21 7L1 7L1 9L21 9L21 7Z"
+                        fill="#10242E" />
+                </svg>
+            </div>
+        </div>
+        <div class="flex flex-row">
+            <a href="#" class="pl-2 pr-5 underline text-xl">Наш YOUTUBE канал</a>
+            <img src="../Assets/img/video/arrow.svg" alt="">
+        </div>
+    </div>
+
+    <div class="text-figma-dgray container mx-auto p-2 mb-36">
+        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative">Связь с нами<span
+                class="с_shadow hidden lg:block text-4xl lg:text-6xl">Связь с нами</span></p>
+        <form action="#"
+            class="flex flex-col xl:flex-row border border-figma-line rounded-xl justify-around items-start xl:items-center">
+            <div class="flex flex-col m-4 items-center -mt-2">
+                <div class="border-b border-figma-line my-8"><input type="text"
+                        class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none"
+                        placeholder="Ваше имя"></div>
+                <div class="border-b border-figma-line my-8"><input type="text"
+                        class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none"
+                        placeholder="Купить/арендовать/сдать"></div>
+                <div class="border-b border-figma-line my-8"><input type="text"
+                        class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none"
+                        placeholder="Ваш телефон"></div>
+            </div>
+            <div class="flex flex-col w-full xl:w-1/2">
+                <textarea
+                    class="p-4 m-4 rounded-xl xl:mt-28 mb-6 bg-transparent border border-figma-line md:w-1/2 lg:w-auto xl:w-full"
+                    name="textarea" rows="10" placeholder="Введите сообщение"></textarea>
+                <button
+                    class="text-base mx-4 mb-16 border-2 border-figma-yellow h-10 bg-figma-yellow rounded-3xl w-32 self-end p-2 hover:h-10 hover:border-2 hover:border-figma-black hover:bg-figma-dyellow mr-16 xl:mr-0"><span
+                        class="text-figma-black">Отправить</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="bg-figma-dgray h-80">
+        <nav class="text-white  ">
+            <div class="container flex flex-col lg:flex-row justify-between items-center mx-auto p-4">
+                <div class="flex flex-col sm:flex-row items-center">
+                    <a href="#" class="m-4">
+                        <h3 class="text-3xl">ЛОГО</h3>
+                    </a>
+                    <p class="text-2xl m-4 text-center">Работайте с профессионалами</p>
+                </div>
+                <div class="flex flex-row text-base">
+                    <p class="text-base mx-4 hidden sm:flex sm:flex-col">Email</p>
+                    <p class="text-base mx-4 flex flex-col hidden sm:flex sm:flex-col">
+                        <span>+905534562314</span>
+                        <span>+79055327272</span>
+                    </p>
+                    <button
+                        class="text-base h-12 border-2 border-figma-dgray mx-4 bg-figma-yellow rounded-3xl px-4 hover:border-2 hover:border-figma-black hover:bg-figma-dyellow"><span
+                            class="text-figma-black">Обратный звонок</span></button>
+                    <div class="text-base mx-4 flex flex-row items-center">
+                        <img class="w-8 h-8 m-1" src="../Assets/img/header/nav.png" alt="">
+                        <img class="w-8 h-8 m-1" src="../Assets/img/header/nav.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:block border border-white bg-white w-full container mx-auto"></div>
+            <div class="hidden lg:flex flex flex-col lg:flex-row container mx-auto justify-around flex-wrap">
+                <a href="#advantages" class="text-base m-2">Компания</a>
+                <a href="#rent" class="text-base m-2">Объекты/аренда</a>
+                <a href="#sell" class="text-base m-2">Объекты/продажа</a>
+                <a href="#sell/rent" class="text-base m-2">Продать/сдать свой объект</a>
+                <a href="#info" class="text-base m-2">Полезная информация</a>
+                <a href="#contacts" class="text-base m-2">Контакты</a>
+                <p class="text-base m-2 sm:hidden block">Email</p>
+                <p class="text-base m-2 flex flex-col sm:hidden block">
+                    <span>+905534562314</span>
+                    <span>+79055327272</span>
+                </p>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="../Assets/JS/tail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../Assets/JS/slider.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+
+</html>
