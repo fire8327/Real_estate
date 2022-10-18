@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Недвижимость</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Assets/CSS/style.css">
+</head>
+
+<body class="bg-figma-bg">
+    <header class="bg-figma-dgray">
+        <nav class="text-white lg:pb-6">
+            <div class="container flex flex-col lg:flex-row justify-between items-center mx-auto p-4">
+                <div class="flex flex-col sm:flex-row items-center">
+                    <a href="#" class="m-4">
+                        <h3 class="text-3xl">ЛОГО</h3>
+                    </a>
+                    <p class="text-2xl m-4 text-center">Работайте с профессионалами</p>
+                </div>
+                <div class="flex flex-row text-base">
+                    <p class="text-base mx-4 hidden sm:flex sm:flex-col">Email</p>
+                    <p class="text-base mx-4 flex flex-col hidden sm:flex sm:flex-col">
+                        <span>+905534562314</span>
+                        <span>+79055327272</span>
+                    </p>
+                    <button
+                        class="text-base h-12 border-2 border-figma-dgray mx-4 bg-figma-yellow rounded-3xl px-4 hover:border-2 hover:border-figma-black hover:bg-figma-dyellow"><span
+                            class="text-figma-black">Обратный звонок</span></button>
+                    <div class="text-base mx-4 flex flex-row items-center">
+                        <img class="w-8 h-8 m-1" src="../Assets/img/header/nav.png" alt="">
+                        <img class="w-8 h-8 m-1" src="../Assets/img/header/nav.png" alt="">
+                    </div>
+                    <button data-collapse-toggle="navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                        type="button" class="lg:hidden">
+                        <svg class="w-8 h-8 m-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="border border-white bg-white w-full container mx-auto"></div>
+            <div class="hidden lg:flex flex flex-col lg:flex-row container mx-auto justify-around flex-wrap"
+                id="navbar-default">
+                <a href="#advantages" class="text-base m-2">Компания</a>
+                <a href="#rent" class="text-base m-2">Объекты/аренда</a>
+                <a href="#sell" class="text-base m-2">Объекты/продажа</a>
+                <a href="#sell/rent" class="text-base m-2">Продать/сдать свой объект</a>
+                <a href="#info" class="text-base m-2">Полезная информация</a>
+                <a href="#contacts" class="text-base m-2">Контакты</a>
+                <p class="text-base m-2 sm:hidden block">Email</p>
+                <p class="text-base m-2 flex flex-col sm:hidden block">
+                    <span>+905534562314</span>
+                    <span>+79055327272</span>
+                </p>
+            </div>
+        </nav>
+    </header>
+
+    <div class="text-figma-dgray container mx-auto p-2">
+        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative">Почему МЫ<span class="с_shadow hidden lg:block text-4xl lg:text-6xl">Почему МЫ</span></p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-20">
+            <div class="flex flex-col items-center text-center justify-start">
+                <img src="../Assets/img/why/1.png" class="text-center mt-16 h-16" alt="">
+                <p class="text-xl xl:w-72 h-28 mt-6 lg:mt-10">Официальная лицензия на территории Турции</p>
+            </div>
+            <div class="flex flex-col items-center text-center justify-start">
+                <img src="../Assets/img/why/2.png" class="text-center mt-16 h-16" alt="">
+                <p class="text-xl xl:w-72 h-28 mt-6 lg:mt-10">Более 5 лет на рынке</p>
+            </div>
+            <div class="flex flex-col items-center text-center justify-start">
+                <img src="../Assets/img/why/3.png" class="text-center mt-16 h-16" alt="">
+                <p class="text-xl xl:w-72 h-28 mt-6 lg:mt-10">Уютный офис в центре Анталии</p>
+            </div>
+            <div class="flex flex-col items-center text-center justify-start">
+                <img src="../Assets/img/why/4.png" class="text-center mt-16 h-16" alt="">
+                <p class="text-xl xl:w-72 h-28 mt-6 lg:mt-10">Мы сделали привычно высокий уровень сервиса, как в Москве
+                    и Санкт-Петербурге</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:mt-28">
+            <div class="flex flex-col items-center text-center justify-start">
+                <img src="../Assets/img/why/5.png" class="text-center mt-16 h-16" alt="">
+                <p class="text-xl xl:w-72 h-28 mt-6 lg:mt-10">100% русскоговорящий персонал</p>
+            </div>
+            <div class="flex flex-col items-center text-center justify-start">
+                <img src="../Assets/img/why/6.png" class="text-center mt-16 h-16" alt="">
+                <p class="text-xl xl:w-72 h-28 mt-6 lg:mt-10">Более 250 довольных клиентов</p>
+            </div>
+            <div class="flex flex-col items-center text-center justify-start">
+                <img src="../Assets/img/why/7.png" class="text-center mt-16 h-16" alt="">
+                <p class="text-xl xl:w-72 h-28 mt-6 lg:mt-10">Профессиональные юристы в штате</p>
+            </div>
+            <div class="flex flex-col items-center text-center justify-start">
+                <img src="../Assets/img/why/8.png" class="text-center mt-16 h-16" alt="">
+                <p class="text-xl xl:w-72 h-28 mt-6 lg:mt-10">Более 300 объектов в работе</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-figma-dgray container mx-auto p-2">
+        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative" id="contacts">Наша философия<span class="с_shadow hidden lg:block text-4xl lg:text-6xl">философия</span></p>
+        <div class="flex flex-col lg:flex-row justify-around items-center gap-2 lg:items-start">
+            <img src="../Assets/img/philosophy/philosophy.svg" alt="" class="lg:w-1/2">
+            <p class="text-3xl text-figma-black w-full lg:w-1/2 lg:px-4">Создавая бизнес, любой собственник вкладывает в свою компанию сокровенный замысел, который в последствии откликнется в сердцах клиентов и станет движущей силой для всех сотрудников.
+            </p>
+        </div>          
+        <div class="w-10/12 mx-auto">
+            <div class="flex justify-center items-center my-24">
+                <div class="bg-figma-black border border-figma-black rotate-45 w-1 h-1"></div>
+                <div class="bg-figma-black border border-figma-black w-full h-px"></div>
+                <div class="bg-figma-black border border-figma-black rotate-45 w-1 h-1"></div>
+            </div> 
+            <div class="flex flex-col lg:flex-row items-center text-center text-4xl">
+                <p>
+                    Мы видим это так: <br>
+                    “Профессиональный сервис по аренде и продаже недвижимости для тех, кто видит свое будущее в регулярном посещении или постоянном пребывании  в стране с одним из самых высоких темпов роста экономики и где 340 солнечных дней в году.”
+                </p>
+            </div>
+            <div class="flex justify-center items-center my-24">
+                <div class="bg-figma-black border border-figma-black rotate-45 w-1 h-1"></div>
+                <div class="bg-figma-black border border-figma-black w-full h-px"></div>
+                <div class="bg-figma-black border border-figma-black rotate-45 w-1 h-1"></div>
+            </div> 
+        </div>     
+        <div class="flex flex-col lg:flex-row justify-around items-center gap-2 lg:items-start">
+            <div class="w-full lg:w-1/2 flex flex-col lg:px-4l">
+                <p class="text-3xl text-figma-black pb-2">
+                    За 15 лет построения бизнеса в России и Украине собственники компании сами столкнулись с многочисленными вопросами в процессе релокации семей, подбора недвижимости, решению эмиграционных вопросов, а также с сомнительным сервисом.
+                </p>
+                <p class="text-3xl text-figma-black pt-2">
+                    Именно по этой причине, этот не совсем успешный опыт позволяет нам уверенно утверждать, что мы создали одну из самых клиентоориентированых компаний для русскоязычной аудитории, где смогли сохранить привычно высокий уровень сервиса.
+            </div>
+            <div class="w-full lg:w-1/2 bg-figma-gray h-130 rounded-xl"></div>            
+        </div>    
+    </div>
+
+    <div class="text-figma-dgray container mx-auto p-2">
+        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative" id="contacts">Наши сертификаты и лицензии<span class="с_shadow hidden lg:block text-4xl lg:text-6xl">сертификаты и лицензии</span></p>
+          
+    </div>
+
+    <div class="text-figma-dgray container mx-auto p-2">
+        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative">Связь с нами<span class="с_shadow hidden lg:block text-4xl lg:text-6xl">Связь с нами</span></p>
+        <form action="#"
+            class="flex flex-col xl:flex-row border border-figma-line rounded-xl justify-around items-start xl:items-center">
+            <div class="flex flex-col m-4 items-center -mt-2">
+                <div class="border-b border-figma-line my-8"><input type="text"
+                        class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none"
+                        placeholder="Ваше имя"></div>
+                <div class="border-b border-figma-line my-8"><input type="text"
+                        class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none"
+                        placeholder="Купить/арендовать/сдать"></div>
+                <div class="border-b border-figma-line my-8"><input type="text"
+                        class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none"
+                        placeholder="Ваш телефон"></div>
+            </div>
+            <div class="flex flex-col w-full xl:w-1/2">
+                <textarea
+                    class="p-4 m-4 rounded-xl xl:mt-28 mb-6 bg-transparent border border-figma-line md:w-1/2 lg:w-auto xl:w-full"
+                    name="textarea" rows="10" placeholder="Введите сообщение"></textarea>
+                <button
+                    class="text-base mx-4 mb-16 border-2 border-figma-yellow h-10 bg-figma-yellow rounded-3xl w-32 self-end p-2 hover:h-10 hover:border-2 hover:border-figma-black hover:bg-figma-dyellow mr-16 xl:mr-0"><span
+                        class="text-figma-black">Отправить</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="text-figma-dgray container mx-auto p-2 mb-36">
+        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative" id="contacts">Наши контакты<span class="с_shadow hidden lg:block text-4xl lg:text-6xl">контакты</span></p>
+        <div class="flex flex-col lg:flex-row justify-around">
+            <div class="flex-flex-col bg-figma-gray rounded-xl lg:w-1/2 m-4 h-80">
+            </div>
+            <div class="flex-flex-col lg:w-1/2 m-4 items-start">
+                <p class="mb-10">Адрес:</p>
+                <p class="mb-10">Почта:</p>
+                <div class="flex flex-row justtify-around">
+                    <p class="mb-10">Телефон:</p>
+                    <p class="ml-10">+905534562314 <br>
+                        +79055327272</p>
+                </div>
+                <div class="w-full flex justify-end">
+                    <button
+                        class="text-base mx-4 h-10 mb-16 border-2 border-figma-dgray bg-figma-dgray rounded-3xl w-32 p-2 hover:border-2 hover:border-figma-black hover:bg-gray-700"><span
+                            class="text-white">Отправить</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-figma-dgray h-80">
+        <nav class="text-white  ">
+            <div class="container flex flex-col lg:flex-row justify-between items-center mx-auto p-4">
+                <div class="flex flex-col sm:flex-row items-center">
+                    <a href="#" class="m-4">
+                        <h3 class="text-3xl">ЛОГО</h3>
+                    </a>
+                    <p class="text-2xl m-4 text-center">Работайте с профессионалами</p>
+                </div>
+                <div class="flex flex-row text-base">
+                    <p class="text-base mx-4 hidden sm:flex sm:flex-col">Email</p>
+                    <p class="text-base mx-4 flex flex-col hidden sm:flex sm:flex-col">
+                        <span>+905534562314</span>
+                        <span>+79055327272</span>
+                    </p>
+                    <button
+                        class="text-base h-12 border-2 border-figma-dgray mx-4 bg-figma-yellow rounded-3xl px-4 hover:border-2 hover:border-figma-black hover:bg-figma-dyellow"><span
+                            class="text-figma-black">Обратный звонок</span></button>
+                    <div class="text-base mx-4 flex flex-row items-center">
+                        <img class="w-8 h-8 m-1" src="../Assets/img/header/nav.png" alt="">
+                        <img class="w-8 h-8 m-1" src="../Assets/img/header/nav.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="border border-white bg-white w-full container mx-auto"></div>
+            <div class="hidden lg:flex flex flex-col lg:flex-row container mx-auto justify-around flex-wrap">
+                <a href="#advantages" class="text-base m-2">Компания</a>
+                <a href="#rent" class="text-base m-2">Объекты/аренда</a>
+                <a href="#sell" class="text-base m-2">Объекты/продажа</a>
+                <a href="#sell/rent" class="text-base m-2">Продать/сдать свой объект</a>
+                <a href="#info" class="text-base m-2">Полезная информация</a>
+                <a href="#contacts" class="text-base m-2">Контакты</a>
+                <p class="text-base m-2 sm:hidden block">Email</p>
+                <p class="text-base m-2 flex flex-col sm:hidden block">
+                    <span>+905534562314</span>
+                    <span>+79055327272</span>
+                </p>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="../Assets/JS/tail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../Assets/JS/slider.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+
+</html>

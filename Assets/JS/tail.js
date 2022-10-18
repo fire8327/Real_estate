@@ -19,6 +19,9 @@ tailwind.config = {
             'xl': '1280px',
             '2xl': '1536px',
           },
+          height: {
+            '130': '32.5rem',
+          }
     },
   };
 
