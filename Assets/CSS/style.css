@@ -11,16 +11,7 @@ body {
    }
    /* Стили Swiper */
    
-   .mySwiper{
-     /*  width: 100%;   */ 
-   }
-   
-   .swiper-slide{
-      /* height: 400px; */
-   }
-   
    .swiper .swiper-slide img{
-      /* height: 100%; */
       width: 100%;
       object-fit: cover;
    }
