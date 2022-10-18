@@ -9,7 +9,8 @@ tailwind.config = {
             'figma-black':'#000000',            
             'figma-bg':'#F5F5F5',    
             'figma-line':'#10242E',   
-            'figma-head':'#BBBBBBC2'     
+            'figma-head':'#BBBBBBC2',
+            'figma-border':'#cfd3d5'      
           },
           screens: {
             'ml':'425px',

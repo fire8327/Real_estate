@@ -1,6 +1,10 @@
 body {    
    font-family: 'Roboto', sans-serif;
    }
+
+   .gradient{
+      background: linear-gradient(90.24deg, #FFFFFF 23.39%, rgba(255, 255, 255, 0.67) 99.79%);
+   }
    
    input {
       border: none; outline: none;
