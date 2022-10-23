@@ -10,7 +10,8 @@ tailwind.config = {
             'figma-bg':'#F0EFF3',    
             'figma-line':'#10242E',   
             'figma-head':'#BBBBBBC2',
-            'figma-border':'#cfd3d5'      
+            'figma-border':'#cfd3d5',
+            'figma-sr':'#10242E87'      
           },
           screens: {
             'ml':'425px',

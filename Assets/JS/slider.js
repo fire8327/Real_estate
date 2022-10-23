@@ -41,3 +41,17 @@ const swiper3 = new Swiper(".mySwiper3", {
    1440: {slidesPerView:4},
   },
 });
+
+const swiper4 = new Swiper(".mySwiper4", {
+  loop:true,
+  slidesPerView:1, 
+  spaceBetween:30,          
+  navigation: {
+    nextEl: ".rent .swiper-button-next",
+    prevEl: ".rent .swiper-button-prev",
+  },
+  breakpoints:{
+   768: {slidesPerView:2},
+   1024: {slidesPerView:3},
+  },
+});
