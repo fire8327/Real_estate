@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аренда</title>
+    <title>Аренда поиск</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css">
@@ -69,51 +69,54 @@
         </nav>
     </header>
 
-    <div class="text-figma-dgray container mx-auto p-2">
+    <div class="text-figma-dgray container mx-auto p-2 mb-36">
         <p class="text-4xl sm:text-5xl mt-32 relative">Каталог недвижимости<span
                 class="с_shadow hidden lg:block text-4xl lg:text-6xl">Каталог недвижимости</span></p>
         <div class="flex flex-col">
             <div class="flex flex-col">
-                <p class="text-3xl mt-20">Заголовок объекта</p>
-                <p class="mt-7 text-2xl">Поиск по параметрам</p>
+                <p class="mt-7 text-2xl">Фильтр поиска объектов</p>
                 <form>
-                <div class="grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4 mt-9">
-                    <div class="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 text-figma-sr">
-                        <div class="border-b border-figma-black text-xl my-2 lg:my-0">
-                            <select name="city" class="bg-transparent border-none w-full">
-                            <option selected disabled>Город</option>
-                            <option>Пример города</option>
-                            <option>Пример города</option>
-                            <option>Пример города</option>
-                            </select>
-                        </div>    
-                        <div class="border-b border-figma-black text-xl my-2 lg:my-0">
-                            <select name="city" class="bg-transparent border-none w-full">
-                            <option selected disabled>Район</option>
-                            <option>Пример района</option>
-                            <option>Пример района</option>
-                            <option>Пример района</option>
-                            </select>
-                        </div>                     
-                    </div>
-                    <div class="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 text-figma-sr">
-                        <div class="border-b border-figma-black text-xl my-2 lg:my-0">
-                            <select name="city" class="bg-transparent border-none w-full">
-                            <option selected disabled>Квартира/Дом</option>
-                            <option>Пример Квартиры/Дома</option>
-                            <option>Пример Квартиры/Дома</option>
-                            <option>Пример Квартиры/Дома</option>
-                            </select>
-                        </div>    
-                        <div class="border-b border-figma-black text-xl my-2 lg:my-0">
-                            <select name="city" class="bg-transparent border-none w-full">
-                            <option selected disabled>Новостройка/Вторичка</option>
-                            <option>Новостройка</option>
-                            <option>Вторичка</option>
-                            </select>
-                        </div>                     
-                    </div>
-                </div>
+                <div class="grid grid-cols-1 gap-1 md:grid-cols-2 md:gap-2 lg:grid-cols-3 gap-3">
+                    <div class="border-b border-figma-black text-xl my-2 lg:my-0"><select name="" id="" class="bg-transparent border-none w-full mt-8">
+                        <option value="" selected disabled>Город</option>
+                        <option value="">Пример города</option>
+                        <option value="">Пример города</option>
+                        <option value="">Пример города</option>
+                    </select>
+                </div> 
+                    <div class="border-b border-figma-black text-xl my-2 lg:my-0"><select name="" id="" class="bg-transparent border-none w-full mt-8">
+                        <option value="" selected disabled>Район</option>
+                        <option value="">Пример района</option>
+                        <option value="">Пример района</option>
+                        <option value="">Пример района</option>
+                    </select>
+                </div> 
+                    <div class="border-b border-figma-black text-xl my-2 lg:my-0"><select name="" id="" class="bg-transparent border-none w-full mt-8">
+                        <option value="" selected disabled>Квартира/Дом</option>
+                        <option value="">Квартира</option>
+                        <option value="">Дом</option>
+                    </select>
+                </div> 
+                    <div class="border-b border-figma-black text-xl my-2 lg:my-0"><select name="" id="" class="bg-transparent border-none w-full mt-8">
+                        <option value="" selected disabled>Новостройка/Вторичка</option>
+                        <option value="">Новостройка</option>
+                        <option value="">Вторичка</option>
+                    </select>
+                </div> 
+                    <div class="border-b border-figma-black text-xl my-2 lg:my-0"><select name="" id="" class="bg-transparent border-none w-full mt-8">
+                        <option value="" selected disabled>Расстояние до моря</option>
+                        <option value="">Пример расстояния</option>
+                        <option value="">Пример расстояния</option>
+                        <option value="">Пример расстояния</option>
+                    </select>
+                </div> 
+                    <div class="border-b border-figma-black text-xl my-2 lg:my-0"><select name="" id="" class="bg-transparent border-none w-full mt-8">
+                        <option value="" selected disabled>Бассейн</option>
+                        <option value="">Есть</option>
+                        <option value="">Нет</option>
+                    </select>
+                </div> 
+                </div>                    
                 <div class="grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4 mt-12">
                    <div class="flex flex-col">
                     <p class="text-xl text-figma-sr  mb-3">Площадь</p>
@@ -182,13 +185,21 @@
                 </div>
                 <div class="w-5/12 h-auto flex flex-col">
                     <p class="text-2xl mb-4">Объект №</p>
-                    <p class="text-xl mb-4">Новостройка/ вторичка</p>
                     <p class="text-xl mb-4">Цена:</p>
-                    <p class="text-xl mb-4">Депозит:</p>
-                    <p class="text-xl mb-6">Комиссия:</p>
-                    <button
-                        class="text-base w-48 h-12 bg-figma-yellow border border-figma-yellow rounded-3xl px-4 hover:bg-figma-dyellow hover:border-figma-black"><span
-                            class="text-figma-black">Написать нам</span></button>
+                    <p class="text-xl mb-4">Площадь:</p>
+                    <p class="text-xl mb-6">Планировка:</p>
+                    <p class="text-xl mb-6">Этаж:</p>
+                    <p class="text-xl mb-6">Бассейн:</p>
+                    <p class="text-xl mb-6">Растояние до моря:</p>
+                    <p class="text-xl mb-6">Описание:</p>
+                    <div class="flex flex-row">
+                        <button
+                            class="mr-3 text-base w-48 h-12 bg-figma-dgray border-2 border-figma-dgray text-white rounded-3xl px-4 hover:bg-figma-bg hover:border-figma-dgray hover:text-figma-dgray"><span
+                                class="">Написать нам</span></button>
+                                <button
+                            class="ml-3 text-base w-48 h-12 bg-figma-yellow border-2 border-figma-yellow rounded-3xl px-4 hover:bg-figma-dyellow hover:border-figma-black"><span
+                                class="text-figma-black">Обратный звонок</span></button>
+                            </div>
                 </div>
             </div>
             </div>
@@ -259,125 +270,103 @@
                     </svg>
                 </div>
             </div>
-            <div class="grid grid-cols-1 gap-1 md:grid-cols-2 md:gap-2 lg:grid-cols-4 lg:gap-4 mt-20">
-                <div class="flex flex-col">
-                    <div class="border-b border-figma-black my-2 lg:my-0">
-                    <input type="text" class="bg-transparent text-figma-black text-2xl rent p-0 w-full" placeholder="Город" name="city">
-                    </div>
-                    <label for="city" class="text-base text-figma-sr">Город</label>
-                </div>
-                <div class="flex flex-col">
-                    <div class="border-b border-figma-black my-2 lg:my-0">
-                    <input type="text" class="bg-transparent text-figma-black text-2xl rent p-0 w-full" placeholder="Район" name="area">
-                    </div>
-                    <label for="area" class="text-base text-figma-sr">Район</label>
-                </div>
-                <div class="flex flex-col">
-                    <div class="border-b border-figma-black my-2 lg:my-0">
-                    <input type="text" class="bg-transparent text-figma-black text-2xl rent p-0 w-full" placeholder="Квартира" name="flat">
-                    </div>
-                    <label for="flat" class="text-base text-figma-sr">Квартира</label>
-                </div>
-                <div class="flex flex-col">
-                    <div class="border-b border-figma-black my-2 lg:my-0">
-                    <input type="text" class="bg-transparent text-figma-black text-2xl rent p-0 w-full" placeholder="Площадь" name="s">
-                    </div>
-                    <label for="s" class="text-base text-figma-sr">Площадь</label>
-                </div>
-                <div class="flex flex-col">
-                    <div class="border-b border-figma-black my-2 lg:my-0">
-                    <input type="text" class="bg-transparent text-figma-black text-2xl rent p-0 w-full" placeholder="Планировка" name="layout">
-                    </div>
-                    <label for="layout" class="text-base text-figma-sr">Планировка</label>
-                </div>
-                <div class="flex flex-col">
-                    <div class="border-b border-figma-black my-2 lg:my-0">
-                    <input type="text" class="bg-transparent text-figma-black text-2xl rent p-0 w-full" placeholder="Этаж" name="floor">
-                    </div>
-                    <label for="floor" class="text-base text-figma-sr">Этаж</label>
-                </div>
-                <div class="flex flex-col">
-                    <div class="border-b border-figma-black my-2 lg:my-0">
-                    <input type="text" class="bg-transparent text-figma-black text-2xl rent p-0 w-full" placeholder="Бассейн" name="pool">
-                    </div>
-                    <label for="pool" class="text-base text-figma-sr">Бассейн</label>
-                </div>
-                <div class="flex flex-col">
-                    <div class="border-b border-figma-black my-2 lg:my-0">
-                    <input type="text" class="bg-transparent text-figma-black text-2xl rent p-0 w-full" placeholder="Расстояние до моря" name="distance">
-                    </div>
-                    <label for="distance" class="text-base text-figma-sr">Расстояние до моря</label>
-                </div>
+            <div class="w-full lg:w-10/12 mx-auto flex justify-center items-center my-24 hidden lg:flex">
+                <div class="bg-figma-black border border-figma-black rotate-45 w-1 h-1"></div>
+                <div class="bg-figma-black border border-figma-black w-full h-px"></div>
+                <div class="bg-figma-black border border-figma-black rotate-45 w-1 h-1"></div>
             </div>
-            <div>
-                <p class="text-3xl mt-24">Описание</p>
-                <p class="text-2xl"></p>
-                <p class="text-3xl mt-24">Описание района</p>
-                <p class="text-2xl"></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="text-figma-dgray container mx-auto p-2 mb-36">
-        <p class="text-4xl sm:text-5xl mt-32 mb-24 relative">Видеообзоры районов<span
-                class="с_shadow hidden lg:block text-4xl lg:text-6xl">видеообзоры</span></p>
-        <div class="relative container video mx-auto">
-            <div class="swiper mySwiper3">
-                <div class="swiper-wrapper">
-                    <div
-                        class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">
-                        <img class="rounded-xl" src="../Assets/img/video/bg.png" alt="">
-                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно
-                            быстро заполнить макеты или прототипы содержимым. </p>
+            <div class="flex flex-col">
+                <div class="flex flex-col lg:flex-row gap-4">
+                    <div class="rounded-xl lg:w-7/12 h-auto">
+                        <img src="../Assets/img/sell_rent/search.svg" alt="">
                     </div>
-                    <div
-                        class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">
-                        <img class="rounded-xl" src="../Assets/img/video/bg.png" alt="">
-                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно
-                            быстро заполнить макеты или прототипы содержимым. </p>
-                    </div>
-                    <div
-                        class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">
-                        <img class="rounded-xl" src="../Assets/img/video/bg.png" alt="">
-                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно
-                            быстро заполнить макеты или прототипы содержимым. </p>
-                    </div>
-                    <div
-                        class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">
-                        <img class="rounded-xl" src="../Assets/img/video/bg.png" alt="">
-                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно
-                            быстро заполнить макеты или прототипы содержимым. </p>
-                    </div>
-                    <div
-                        class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">
-                        <img class="rounded-xl" src="../Assets/img/video/bg.png" alt="">
-                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно
-                            быстро заполнить макеты или прототипы содержимым. </p>
-                    </div>
-                    <div
-                        class="swiper-slide flex flex-shrink-0 relative w-full ml:w-1/2 md:w-1/4 flex-col justify-center">
-                        <img class="rounded-xl" src="../Assets/img/video/bg.png" alt="">
-                        <p class="m-4">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно
-                            быстро заполнить макеты или прототипы содержимым. </p>
+                    <div class="w-5/12 h-auto flex flex-col">
+                        <p class="text-2xl mb-4">Объект №</p>
+                        <p class="text-xl mb-4">Цена:</p>
+                        <p class="text-xl mb-4">Площадь:</p>
+                        <p class="text-xl mb-6">Планировка:</p>
+                        <p class="text-xl mb-6">Этаж:</p>
+                        <p class="text-xl mb-6">Бассейн:</p>
+                        <p class="text-xl mb-6">Растояние до моря:</p>
+                        <p class="text-xl mb-6">Описание:</p>
+                        <div class="flex flex-row">
+                            <button
+                                class="mr-3 text-base w-48 h-12 bg-figma-dgray border-2 border-figma-dgray text-white rounded-3xl px-4 hover:bg-figma-bg hover:border-figma-dgray hover:text-figma-dgray"><span
+                                    class="">Написать нам</span></button>
+                                    <button
+                                class="ml-3 text-base w-48 h-12 bg-figma-yellow border-2 border-figma-yellow rounded-3xl px-4 hover:bg-figma-dyellow hover:border-figma-black"><span
+                                    class="text-figma-black">Обратный звонок</span></button>
+                                </div>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-button-next">
-                <svg class="slider3" width="21" height="16" viewBox="0 0 21 16" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928932C13.9526 0.538408 13.3195 0.538408 12.9289 0.928932C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM0 9L20 9V7L0 7L0 9Z"
-                        fill="#10242E" />
-                </svg>
-            </div>
-            <div class="swiper-button-prev">
-                <svg class="slider3" width="21" height="16" viewBox="0 0 21 16" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0.292892 7.2929C-0.0976315 7.68342 -0.0976314 8.31658 0.292893 8.70711L6.65686 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538409 7.04738 0.538409 6.65685 0.928933L0.292892 7.2929ZM21 7L1 7L1 9L21 9L21 7Z"
-                        fill="#10242E" />
-                </svg>
-            </div>
+                </div>
+                <div class="relative container sell mx-auto mt-12">
+                    <div class="swiper mySwiper5">
+                        <div class="swiper-wrapper">
+                            <div
+                                class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto rounded-xl z-21">
+                                <img src="../Assets/img/sell_rent/slider.svg" alt="rent"
+                                    class="object-cover object-center w-full rounded-xl -z-20">
+                            </div>
+                            <div
+                                class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto rounded-xl z-21">
+                                <img src="../Assets/img/sell_rent/slider.svg" alt="rent"
+                                    class="object-cover object-center w-full rounded-xl -z-20">
+                            </div>
+                            <div
+                                class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto rounded-xl z-21">
+                                <img src="../Assets/img/sell_rent/slider.svg" alt="rent"
+                                    class="object-cover object-center w-full rounded-xl -z-20">
+                            </div>
+                            <div
+                                class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto rounded-xl z-21">
+                                <img src="../Assets/img/sell_rent/slider.svg" alt="rent"
+                                    class="object-cover object-center w-full rounded-xl -z-20">
+                            </div>
+                            <div
+                                class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto rounded-xl z-21">
+                                <img src="../Assets/img/sell_rent/slider.svg" alt="rent"
+                                    class="object-cover object-center w-full rounded-xl -z-20">
+                            </div>
+                            <div
+                                class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto rounded-xl z-21">
+                                <img src="../Assets/img/sell_rent/slider.svg" alt="rent"
+                                    class="object-cover object-center w-full rounded-xl -z-20">
+                            </div>
+                            <div
+                                class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto rounded-xl z-21">
+                                <img src="../Assets/img/sell_rent/slider.svg" alt="rent"
+                                    class="object-cover object-center w-full rounded-xl -z-20">
+                            </div>
+                            <div
+                                class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto rounded-xl z-21">
+                                <img src="../Assets/img/sell_rent/slider.svg" alt="rent"
+                                    class="object-cover object-center w-full rounded-xl -z-20">
+                            </div>
+                            <div
+                                class="swiper-slide flex flex-shrink-0 relative w-full sm:w-auto rounded-xl z-21">
+                                <img src="../Assets/img/sell_rent/slider.svg" alt="rent"
+                                    class="object-cover object-center w-full rounded-xl -z-20">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg class="slider4" width="21" height="16" viewBox="0 0 21 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928932C13.9526 0.538408 13.3195 0.538408 12.9289 0.928932C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM0 9L20 9V7L0 7L0 9Z"
+                                fill="#10242E" />
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <svg class="slider4" width="21" height="16" viewBox="0 0 21 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.292892 7.2929C-0.0976315 7.68342 -0.0976314 8.31658 0.292893 8.70711L6.65686 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538409 7.04738 0.538409 6.65685 0.928933L0.292892 7.2929ZM21 7L1 7L1 9L21 9L21 7Z"
+                                fill="#10242E" />
+                        </svg>
+                    </div>
+                </div>
         </div>
     </div>
 

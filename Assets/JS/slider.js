@@ -55,3 +55,16 @@ const swiper4 = new Swiper(".mySwiper4", {
    1024: {slidesPerView:3},
   },
 });
+const swiper5 = new Swiper(".mySwiper5", {
+  loop:true,
+  slidesPerView:1, 
+  spaceBetween:30,          
+  navigation: {
+    nextEl: ".sell .swiper-button-next",
+    prevEl: ".sell .swiper-button-prev",
+  },
+  breakpoints:{
+   768: {slidesPerView:2},
+   1024: {slidesPerView:3},
+  },
+});
