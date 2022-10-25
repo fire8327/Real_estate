@@ -10,7 +10,7 @@ function check() {
         send.classList.remove("cursor-not-allowed");  
         send.disabled=false;       
     } else {
-        name_span.innerHTML = "Ошибка! Поле должно быть заполнено и иметь внутри себя только русские буквы";
+        name_span.innerHTML = "Ошибка! Поле обязятельно к заполению и может иметь внутри себя только русские буквы";
         send.classList.remove("bg-figma-yellow","hover:border-figma-black","hover:bg-figma-dyellow");  
         send.classList.add("cursor-not-allowed");  
         send.disabled=true;
@@ -25,7 +25,7 @@ function check() {
         send.classList.remove("cursor-not-allowed");  
         send.disabled=false;    
     } else {
-        phone_span.innerHTML = "Ошибка! Поле должно быть заполнено и иметь внутри себя только цифры";
+        phone_span.innerHTML = "Ошибка! Поле обязятельно к заполению и может иметь внутри себя только цифры";
         send.classList.remove("bg-figma-yellow","hover:border-figma-black","hover:bg-figma-dyellow");  
         send.classList.add("cursor-not-allowed");  
         send.disabled=true;
@@ -40,7 +40,7 @@ function check() {
         send.classList.remove("cursor-not-allowed");  
         send.disabled=false;    
     } else {
-        choice_span.innerHTML = "Ошибка! Поле должно быть заполнено и иметь внутри себя только русские буквы";
+        choice_span.innerHTML = "Ошибка! Поле обязятельно к заполению и может иметь внутри себя только русские буквы";
         send.classList.remove("bg-figma-yellow","hover:border-figma-black","hover:bg-figma-dyellow");  
         send.classList.add("cursor-not-allowed");  
         send.disabled=true;
