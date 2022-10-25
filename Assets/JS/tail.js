@@ -11,7 +11,8 @@ tailwind.config = {
             'figma-line':'#10242E',   
             'figma-head':'#BBBBBBC2',
             'figma-border':'#cfd3d5',
-            'figma-sr':'#10242E87'      
+            'figma-sr':'#10242E87',
+            'figma-error':'rose-500'      
           },
           screens: {
             'ml':'425px',
