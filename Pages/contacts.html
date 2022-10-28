@@ -154,27 +154,44 @@
         <p class="text-4xl sm:text-5xl mt-32 mb-24 relative fadeInRight wow">Связь с нами<span
                 class="с_shadow hidden lg:block text-4xl lg:text-6xl">Связь с нами</span></p>
         <form action="#"
-            class="flex flex-col xl:flex-row border border-figma-line rounded-xl justify-around items-start xl:items-center">
-            <div class="flex flex-col m-4 items-center -mt-2">
-                <div class="border-b border-figma-line my-8"><input type="text"
-                        class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none"
-                        placeholder="Ваше имя"></div>
-                <div class="border-b border-figma-line my-8"><input type="text"
-                        class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none"
-                        placeholder="Купить/арендовать/сдать"></div>
-                <div class="border-b border-figma-line my-8"><input type="text"
-                        class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none"
-                        placeholder="Ваш телефон"></div>
-            </div>
-            <div class="flex flex-col w-full xl:w-1/2">
-                <textarea
-                    class="p-4 m-4 rounded-xl xl:mt-28 mb-6 bg-transparent border border-figma-line md:w-1/2 lg:w-auto xl:w-full"
-                    name="textarea" rows="10" placeholder="Введите сообщение"></textarea>
-                <button
-                    class="text-base mx-4 mb-16 border-2 border-figma-yellow h-10 bg-figma-yellow rounded-3xl w-32 self-end p-2 hover:h-10 hover:border-2 hover:border-figma-black hover:bg-figma-dyellow mr-16 xl:mr-0 hover:delay-200 duration-500 transition-all"><span
-                        class="text-figma-black">Отправить</span>
-                </button>
-            </div>
+                class="flex flex-col xl:flex-row border border-figma-line rounded-xl justify-around items-start xl:items-center">
+                <div class="flex flex-col m-4 items-center -mt-2">
+                    <div class="flex flex-col my-8">
+                        <div class="border-b border-figma-line" id="name_div"><input type="text"
+                                class="bg-transparent w-64 md:w-96 outline-0 appearance-none p-0 focus:outline-none focus:ring-0"
+                                placeholder="Ваше имя" id="name" onblur="check()">
+                        </div>
+                        <span id="name_span" class="text-red-400 animate-pulse w-64 md:w-96"></span>
+                    </div>
+                    <div class="flex flex-col my-8">
+                        <div class="border-b border-figma-line"><input type="text"
+                            class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none p-0 focus:outline-none focus:ring-0"
+                            placeholder="Купить/арендовать/сдать" list="select" id="choice" onblur="check()">
+                            <datalist id="select">
+                                <option value="Купить">Купить</option>
+                                <option value="Арендовать">Арендовать</option>
+                                <option value="Сдать">Сдать</option>
+                            </datalist>
+                        </div>
+                        <span id="choice_span" class="text-red-400 animate-pulse w-64 md:w-96"></span>
+                    </div>
+                    <div class="flex flex-col my-8">
+                        <div class="border-b border-figma-line"><input type="text"
+                            class="bg-transparent w-64 md:w-96 border-none outline-0 appearance-none p-0 focus:outline-none focus:ring-0"
+                            placeholder="Ваш телефон" id="phone" onblur="check()">
+                        </div>
+                        <span id="phone_span" class="text-red-400 animate-pulse w-64 md:w-96"></span>
+                    </div>    
+                </div>
+                <div class="flex flex-col w-full xl:w-1/2">
+                    <textarea
+                        class="p-4 m-4 rounded-xl xl:mt-28 mb-6 bg-transparent border border-figma-line md:w-1/2 lg:w-auto xl:w-full"
+                        name="textarea" rows="10" placeholder="Введите сообщение"></textarea>
+                    <button
+                        class="text-base mx-4 mb-16 border-2 border-figma-yellow h-10 bg-figma-yellow rounded-3xl w-32 self-end p-2 hover:h-10 hover:border-2 hover:border-figma-black hover:bg-figma-dyellow mr-16 xl:mr-0 hover:delay-200 transition-all duration-500" id="send"><span
+                            class="text-figma-black">Отправить</span>
+                    </button>
+                </div>
         </form>
     </div>
 
@@ -280,6 +297,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="../Assets/JS/slider.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="../Assets/JS/validate.js"></script>
 </body>
 
 </html>

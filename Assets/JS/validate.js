@@ -12,7 +12,7 @@ function check() {
     } else {
         name_span.innerHTML = "Ошибка! Поле обязятельно к заполению и может иметь внутри себя только русские буквы";
         send.classList.remove("bg-figma-yellow","hover:border-figma-black","hover:bg-figma-dyellow");  
-        send.classList.add("cursor-not-allowed");  
+        send.classList.add("cursor-not-allowed","bg-figma-gray","border-figma-gray");  
         send.disabled=true;
     }
 
@@ -27,7 +27,7 @@ function check() {
     } else {
         phone_span.innerHTML = "Ошибка! Поле обязятельно к заполению и может иметь внутри себя только цифры";
         send.classList.remove("bg-figma-yellow","hover:border-figma-black","hover:bg-figma-dyellow");  
-        send.classList.add("cursor-not-allowed");  
+        send.classList.add("cursor-not-allowed","bg-figma-gray","border-figma-gray");  
         send.disabled=true;
     }
 
@@ -42,7 +42,7 @@ function check() {
     } else {
         choice_span.innerHTML = "Ошибка! Поле обязятельно к заполению и может иметь внутри себя только русские буквы";
         send.classList.remove("bg-figma-yellow","hover:border-figma-black","hover:bg-figma-dyellow");  
-        send.classList.add("cursor-not-allowed");  
+        send.classList.add("cursor-not-allowed","bg-figma-gray","border-figma-gray");  
         send.disabled=true;
     }
 }

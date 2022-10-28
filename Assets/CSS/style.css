@@ -2,11 +2,6 @@ body {
    font-family: 'Roboto', sans-serif;
    }
 
-   :active, :hover, :focus {
-      outline: 0;
-      outline-offset: 0;
-  }
-
    .gradient{
       background: linear-gradient(90.24deg, #FFFFFF 23.39%, rgba(255, 255, 255, 0.67) 99.79%);
    }
@@ -64,12 +59,6 @@ body {
 
    .Rob2{
 font-family: Roboto Flex;
-font-weight: 400;
-letter-spacing: 0em;
-   }
-
-   .Rob{
-font-family: Roboto;
 font-weight: 400;
 letter-spacing: 0em;
    }
